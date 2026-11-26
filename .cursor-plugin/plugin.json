@@ -1,12 +1,12 @@
 {
-  "name": "finance-ai-recipes",
+  "name": "orla-finance-ai-recipes",
   "version": "0.1.0",
   "description": "Finance recipes as skills for Cursor: each works on a file you attach, and on live books when the Orla plugin is connected. No skill moves money.",
   "author": {
     "name": "Digital Flow Pte. Ltd."
   },
   "homepage": "https://orla.finance/en/recipes",
-  "repository": "https://github.com/cheetah-trade/finance-ai-recipes",
+  "repository": "https://github.com/cheetah-trade/orla-finance-ai-recipes",
   "license": "CC-BY-NC-4.0 AND MIT",
   "logo": "assets/icon.png",
   "keywords": ["finance", "accounting", "bookkeeping", "receivables", "month-close", "compliance"],

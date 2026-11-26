@@ -26,8 +26,8 @@ addresses, tax ids. Each card says what to remove for its job.
 In Claude Code:
 
 ```
-/plugin marketplace add cheetah-trade/finance-ai-recipes
-/plugin install finance-ai-recipes@finance-ai-recipes
+/plugin marketplace add cheetah-trade/orla-finance-ai-recipes
+/plugin install orla-finance-ai-recipes@orla-finance-ai-recipes
 ```
 
 That installs every recipe as a skill, named `orla-recipe-<recipe>`, so it never collides with the Orla plugin's own skills. Ask in your own words ("who owes us

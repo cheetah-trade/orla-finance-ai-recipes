@@ -31,7 +31,11 @@ not rebuild it from rows.
    a quorum), `advisory[]` (expenses without a receipt, currencies without a rate, unpaid bills,
    unpaid client invoices, earlier months still open, an account not compared with its statement or
    bank feed), `checks_done` of `checks_total`, `close_status` (open, reviewed or closed; absent when
-   the space does not close months, then there is nothing to offer) and `changed_since_export`. Each
+   the space does not close months, then there is nothing to offer) and `changed_since_export`.
+   `regular_suppliers_without_bill` names suppliers who bill month after month and have no bill dated
+   in this month, each with `last_month_amount`, `currency` and `last_bill_on`: a question for the
+   person, not a finding, and the amount is only an "estimate from last month's bill" for a draft
+   accrual. It is absent when the person does not see bills. Each
    blocking line may name who clears it (`owners`); on a test space on 2026-11-25 `owners` was empty,
    so when it is, say "who clears it: not named by Orla" and ask the person. Report these as they are:
    pass, fail (blocking), flag (advisory).
@@ -47,12 +51,16 @@ not rebuild it from rows.
    pick overdue bills yourself from `due_on` and `status` (on 2026-11-25 the `due` filter also
    returned paid and void bills, so do not rely on it); one more pass with `status: "paid"` and `q` set to a vendor name when
    you need that vendor's earlier bills. Each row has `issued_on`, `due_on`, `created_at` (when it
-   entered Orla), `amount`, `currency`, `left_to_pay` and `repeats`. A bill issued in the month, or
-   entered after the month end, that is still open is a cutoff candidate. `orla_read_bill` for one
-   bill's lines: look there for what period the bill covers. If the bill does not say, the cutoff and
-   deferral checks for it are COULD NOT CHECK: ask the person for the service period, do not guess it.
-   A recurring vendor with a bill in each of the two months before and none for the month is a
-   question, not a finding.
+   entered Orla), `amount`, `currency`, `left_to_pay` and `repeats`, plus `booking` and
+   `service_period`. `booking.month` is the month the books posted the bill in (`booked_on`;
+   `accrued_on` is the day the bill belongs to, and `late: true` means its own month was closed, so it
+   went into the next open one): a bill whose `accrued_on` is in the month but `booking.month` is later
+   is a cutoff finding. When `booking.month` is empty, its `reason` says why (`plan`: the books are on
+   a higher plan; `not_in_books` or `not_booked`: the books hold no posting for it; `taken_off`): say
+   COULD NOT CHECK for that bill. `service_period` is always empty with `reason: "not_read"`: Orla does
+   not read the period off the paper. `orla_read_bill` for one bill's lines: look there for what
+   period the bill covers. If the lines do not say, the cutoff and deferral checks for it are COULD NOT
+   CHECK: ask the person for the service period, do not guess it.
 5. `orla_missing_receipts` for the month, largest first: expenses without a paper. `by_month` gives
    Orla's own count.
 6. `orla_list_payments`: payments waiting for a signature. They are approved by a person in Orla.
