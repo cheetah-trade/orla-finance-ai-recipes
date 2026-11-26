@@ -151,7 +151,7 @@ these control figures:
 |---|---|
 | Works without Orla | Yes, on files |
 | Works with Orla | Yes, on live books, one client per run; W-9 status still comes from the client's vendor list |
-| What it does with your data | Reads. Drafts questions for you to send. Gives no tax conclusion, never prepares, files or sends a form, never changes anything and has no write step |
+| What it does with your data | This recipe reads the client's data and drafts questions for you to send. Gives no tax conclusion, never prepares, files or sends a form, never changes anything and has no write step |
 | Where it applies | United States only |
 | Checked on | Claude Sonnet with code execution and Claude Haiku without code execution (files), 25 November 2026 |
 | Not checked on | ChatGPT, Gemini and other models: the prompt is written for any model, but nobody at Orla has run it there yet. Live mode with a real AI client and a person signed in: the connection's tools were only called by a test harness on a seeded test space |

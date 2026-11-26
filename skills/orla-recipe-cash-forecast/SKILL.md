@@ -57,7 +57,12 @@ name no plan and no price, and give the fallback.
 3. `orla_cash_flow` with `months: 3`: income, expense and net per month, in base currency, on every plan.
    Use it for "what did we burn last month" and as the fallback below.
 4. `orla_list_accounts`: balances per account in each account's own currency. Never add currencies. Use it
-   to show cash by currency, which the forecast and KPIs cannot.
+   to show cash by currency, which the forecast and KPIs cannot. The forecast starts from these balances,
+   so check each one: `stale` true (its feed last sent the balance more than a day ago, see
+   `last_synced_at`) or `reconciliation.state` `off` (the book does not explain how the provider's balance
+   moved, through `reconciliation.through`) means the starting cash may be wrong. Name those accounts and
+   their amounts beside the forecast as the first assumption, and do not present the starting balance as
+   checked.
 5. `orla_client_revenue` with `detail: "full"`: how fast each client pays (`days_to_pay`, slowest first;
    it counts from the invoice date, not the due date, so say so before you compare it with terms),
    to explain why `as_usual` differs from `on_time`.

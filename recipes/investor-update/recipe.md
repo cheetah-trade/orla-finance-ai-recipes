@@ -69,7 +69,8 @@ customers or investors, bank account numbers, anything covered by a confidential
 
 With Orla connected, steps 1 and 2 disappear: the skill reads the month's investor-update report,
 the cash flow and the business KPIs from your books, with the previous month beside each figure, and
-checks whether the month is reconciled. The report counts cash in as "money in", not accrual
+says in the same answer whether the month is closed and whether it is reconciled, as the Accountant
+page's checklist reads it, and which report and page in Orla each figure comes from. The report counts cash in as "money in", not accrual
 revenue, and takes MRR from active schedules only. Orla does not hold headcount, ARR, churn, margin
 or funding, so the skill writes none of them. There is no way to send the letter from the skill.
 

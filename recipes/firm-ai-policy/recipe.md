@@ -73,7 +73,7 @@ the last four digits, no client examples even with the names removed, no passwor
    lawyer, then sign the policy and set its review date yourselves.
 
 With Orla, none of these steps disappears: the policy is about your firm's tools and habits, and
-Orla's connection reads books, not those. This recipe runs on files only.
+Orla's connection holds books, not those. This recipe runs on files only.
 
 ## 6. What comes out
 

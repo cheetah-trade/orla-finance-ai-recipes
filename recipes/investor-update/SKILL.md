@@ -29,8 +29,10 @@ space reports are refused: tell the person which part they do not see and do not
    `_before` fields beside each (the previous month; they are null when the month has no data),
    `runway_months` (null means not burning), `average_monthly_burn`, `one_off_net_left_out_of_burn`,
    `monthly_recurring_revenue`, `liquid_balance`, `open_receivables`, `open_payables`,
-   `days_sales_outstanding`, `top_clients`, `movements`, `unpriced_currencies`. All figures are in the
-   space's `base_currency`; say so, and name `unpriced_currencies` if it is not empty. If the answer is
+   `days_sales_outstanding`, `top_clients`, `movements`, `unpriced_currencies`, `month_close`, `basis`
+   and `sources`. All figures are in the space's `base_currency`; say so, and name `unpriced_currencies`
+   if it is not empty. `sources` gives, for every figure, the report in Orla it comes from: when the
+   person asks where a number comes from, answer from it, and give `open_in_orla` as the way in. If the answer is
    `unavailable` (a personal space), or BUSINESS_REPORTS_LOCKED (the report is not on this plan), say it
    plainly and use the fallback in step 4.
 3. Name the figures honestly. "Revenue" in this report is money in from the books (cash), not accrual
@@ -44,11 +46,16 @@ space reports are refused: tell the person which part they do not see and do not
    income and days to pay. Use report totals; do not add up pages of transactions.
 5. The paragraph about what changed the most comes from `movements` (their labels), never from a guess
    about the cause. Say what the figures leave out.
-6. Is the month reconciled? `orla_get_month_status` for `month`: if checks are open, say next to every cash
-   figure that the month is not closed. If you cannot tell, say that you could not check.
+6. Is the month closed and reconciled? Read `month_close` of the same answer. `close_status` is `open`,
+   `reviewed` or `closed`; `reconciliation.state` is `reconciled` (every account that moved matched its
+   statement or bank feed), `off` (at least one does not), `partly` or `not_compared` (some or all were not
+   compared; each account in `reconciliation.accounts` says why), `nothing_to_reconcile` (no account
+   moved) or `hidden` (the person is not shown it). Closed is not reconciled: unless the month is closed
+   AND reconciled, say next to every cash figure that the month is not closed or not reconciled, in those
+   words. For the open checks themselves, `orla_get_month_status` with `period` set to `month`.
 7. Write the letter as in `prompt.md`: summary, table with the previous month beside each figure, highlights,
    lowlights (required: use the person's and add what the figures show against), asks as given. Label the
-   figures "unaudited management figures". Put every claim of the founder's notes that the books do not
+   figures as `basis.figures` says: "unaudited management figures". Put every claim of the founder's notes that the books do not
    back in a separate list (backed, partly, not backed, contradicted) with what the figures say instead.
    A plan without data (a round, a date, a hire) is not written as fact: list it and ask.
 8. Before the person sends it anywhere, remind them that `top_clients` and the client names are data about
@@ -66,7 +73,8 @@ Stop there. That is the end of the recipe. There is no tool that sends the lette
 
 ## What to tell the person to check
 
-- Whether the month is reconciled, and any difference between the stated cash and the walk.
+- Whether the month is closed and reconciled (`month_close`), and any difference between the stated cash
+  and the walk.
 - Which burn the letter headlines: with or without the one-off rows.
 - Claims from their notes that the books do not back, and plans stated without data.
 - Client names in the letter, before it leaves their hands.
