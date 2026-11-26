@@ -1,0 +1,19 @@
+number,type,party,party_address,party_country,issue_date,amount,currency,terms,status
+INV-2028,sales invoice,Harrow & Lane Ltd,"40 Cable Street, London E1 8DJ",GB,2026-09-01,12000.00,GBP,"3 monthly instalments of 4,000.00 (September to November), as agreed in the service contract of 28 August 2026",paid
+INV-2029,sales invoice,Nordvik Studio AB,"Ringvagen 12, 118 60 Stockholm",SE,2026-09-08,14500.00,GBP,14 days,paid
+INV-2030,sales invoice,Bramley & Co Ltd,"3 Quay Street, Bristol BS1 4DB",GB,2026-09-15,17800.00,GBP,14 days,paid
+INV-2031,sales invoice,Orrin Media Ltd,"7 Baggot Lane, Dublin 2",IE,2026-09-01,6000.00,GBP,advance before work starts,cancelled
+CN-2031,credit note,Orrin Media Ltd,"7 Baggot Lane, Dublin 2",IE,2026-09-09,-6000.00,GBP,"cancels INV-2031, project cancelled by the client on 8 September 2026, advance refunded",issued
+INV-2033,sales invoice,Nordvik Studio AB,"Ringvagen 12, 118 60 Stockholm",SE,2026-10-01,16000.00,GBP,14 days,paid
+INV-2034,sales invoice,Glenmore Retail Ltd,"88 Bath Street, Glasgow G2 2EN",GB,2026-10-07,8000.00,GBP,14 days,paid
+INV-2035,sales invoice,Bramley & Co Ltd,"3 Quay Street, Bristol BS1 4DB",GB,2026-10-12,9500.00,GBP,14 days,paid
+INV-2038,sales invoice,Frostline Foods Ltd,"Unit 2, Trafford Park, Manchester M17 1AB",GB,2026-11-02,22000.00,GBP,"Christmas campaign, phase 1, 10 days",paid
+INV-2039,sales invoice,Frostline Foods Ltd,"Unit 2, Trafford Park, Manchester M17 1AB",GB,2026-11-09,18500.00,GBP,"Christmas campaign, phase 2, 7 days",paid
+INV-2040,sales invoice,Brisk Lab Ltd,"Unit 9, 14 Mill Road, Leeds LS10 1AA",GB,2026-11-06,7500.00,GBP,7 days,paid
+INV-2041,sales invoice,Tamsin Works Ltd,"Unit 9, 14 Mill Road, Leeds LS10 1AA",GB,2026-11-06,7500.00,GBP,7 days,paid
+INV-2042,sales invoice,Velloway Ltd,"Unit 9, 14 Mill Road, Leeds LS10 1AA",GB,2026-11-07,7500.00,GBP,7 days,paid
+INV-2043,sales invoice,Bramley & Co Ltd,"3 Quay Street, Bristol BS1 4DB",GB,2026-11-12,9500.00,GBP,14 days,paid
+PP-771,supplier bill,Portwell Print Lda,"Rua do Almada 210, 4050-031 Porto",PT,2026-09-20,4200.00,GBP,on receipt,paid
+PP-802,supplier bill,Portwell Print Lda,"Rua do Almada 210, 4050-031 Porto",PT,2026-10-20,3900.00,GBP,on receipt,paid
+PP-845,supplier bill,Portwell Print Lda,"Rua do Almada 210, 4050-031 Porto",PT,2026-11-05,4600.00,GBP,on receipt,paid
+LEASE-2025,lease,Arden Properties Ltd,"21 Shore Road, London E9 7TA",GB,2025-12-15,3500.00,GBP,"monthly rent, 1st of the month, 3 years",active

@@ -1,0 +1,5 @@
+request_id,sent_on,txn_id,date,payee,amount,currency,asked_for,status,reply_on,reply_text
+R01,2026-06-10,T03,2025-12-05,Harlow Print Works,1240.00,USD,invoice,no reply,,
+R02,2026-06-10,T05,2026-01-14,Copperline Electronics,1899.00,USD,receipt,replied,2026-06-12,Will look for it this weekend
+R03,2026-06-10,T15,2026-04-14,Greywater Plumbing,540.00,USD,invoice,no reply,,
+R04,2026-09-04,T22,2026-06-19,Lumen Freight,1560.00,USD,invoice,replied,2026-09-06,"Personal shipment, I paid the company back in July"

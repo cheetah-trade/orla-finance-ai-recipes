@@ -1,0 +1,7 @@
+account,currency,balance,last_sync_date,notes
+Operating,USD,48200.00,2026-11-25,
+Payroll,USD,12400.00,2026-11-24,
+Savings,USD,60000.00,2026-11-25,
+Card clearing,USD,3150.00,2026-11-17,bank asked to reconnect the feed
+EUR account,EUR,9300.00,2026-11-25,
+GBP account,GBP,2100.00,2026-11-23,

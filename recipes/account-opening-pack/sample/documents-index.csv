@@ -1,0 +1,12 @@
+file,document,for,name_as_written,address_as_written,issued,valid_until,notes
+cert-incorporation.pdf,certificate of incorporation,company,SALTMARSH ANALYTICS LTD,,2026-03-04,,
+register-extract.pdf,company register extract,company,SALTMARSH ANALYTICS LTD,"21 Harbour Street, Leith, Edinburgh EH6 6QR",2026-07-30,,
+office-electricity-bill.pdf,utility bill,company,Saltmarsh Analytics Limited,"Suite 4, 21 Harbour Street, Leith, Edinburgh EH6 6QR",2026-10-02,,
+passport-P1.pdf,passport,Mara Lindqvist,LINDQVIST Mara Elin,,2022-05-11,2032-05-10,
+passport-P2.pdf,passport,Tomas Reyes,REYES Tomas,,2017-01-21,2027-01-20,
+licence-P3.pdf,driving licence,Ilse Varga,VARGA Ilse,home address present,2021-08-30,2036-08-29,EU driving licence
+address-P1.pdf,bank statement,Mara Lindqvist,Mara Lindqvist,home address present,2026-10-28,,
+address-P2.pdf,council tax bill,Tomas Reyes,Tomas Reyes,home address present,2026-06-10,,
+first-deposit.pdf,bank statement of Lindqvist Holdings Ltd,company,Lindqvist Holdings Ltd,,2026-11-15,,shows GBP 50000.00 available
+contract-orbis.pdf,services contract,company,Saltmarsh Analytics Ltd,,2026-09-01,2027-08-31,"client Orbis Freight Ltd, GBP 6,500 a month"
+contract-pellbridge.pdf,services contract,company,Saltmarsh Analytics Ltd,,2026-10-15,2027-04-14,"client Pellbridge Retail Ltd, GBP 4,000 a month"

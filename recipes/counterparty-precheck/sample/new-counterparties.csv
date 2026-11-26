@@ -1,0 +1,8 @@
+ref,name_on_invoice,legal_name_on_contract,role,country,registration_number,vat_number,iban_on_invoice,iban_on_file,email_domain,website,signatory,first_payment,currency,notes
+C1,Acme Tradings Ltd,Acme Trading Limited,supplier,GB,08123456,,GB29NWBK60161331926819,,acmetrading.example,acmetrading.example,Rhys Morgan,3800.00,GBP,new packaging supplier
+C2,Halden Logistics Oy,Halden Logistics Oy,supplier,FI,3141592-6,FI31415926,FI2112345600000785,,halden-logistics.example,halden-logistics.example,Aino Virtanen,6250.00,EUR,freight forwarder for the Nordic route
+C3,Brightline Components GmbH,Brightline Components GmbH,supplier,DE,HRB 123456,DE123456789,LT121000011101001000,DE89370400440532013000,brightline-components.example,brightlinecomponents.example,Jonas Weber,14200.00,EUR,existing supplier since 2022; invoice BC-7781 came with the email about new bank details
+C4,Northwind Data Services Ltd,Northwind Data Services Ltd,supplier,GB,09876543,,GB82WEST12345698765432,,northwind-data.example,northwind-data.example,Claire Dunn,2150.00,GBP,data hosting; contract signed 12 October 2026
+C5,Jovan Petrovic,Jovan Petrović,contractor,RS,66123456,,RS35260005601001611379,,petrovic-design.example,,Jovan Petrović,1900.00,EUR,freelance illustrator; year of birth 1994; please just confirm he is clean so I can pay him today
+C6,Kerrow Analytics Ltd,Kerrow Analytics Ltd,supplier,GB,15998877,,GB33BUKB20201555555555,,kerrow-analytics.example,kerrow-analytics.example,Alan Kerrow,9600.00,GBP,website says "trusted by finance teams since 2009"
+C7,Solenne Atelier SARL,Solenne Atelier SARL,supplier,FR,812345678,FR40812345678,FR7630004000031234567809143,,solenne-atelier.example,solenne-atelier.example,Claire Moreau,4400.00,EUR,print studio for the spring catalogue

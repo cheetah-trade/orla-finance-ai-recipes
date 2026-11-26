@@ -1,0 +1,20 @@
+FERNHILL STUDIO LTD
+Company number 11482093
+finance@fernhill.example
+
+INVOICE FS-2026-104 (invented document for this sample)
+Invoice date: 10 October 2026
+Due date: 9 November 2026
+
+Bill to:
+Brightwater Media Inc.
+Accounts Payable
+
+Description                                         Amount
+Phase 2: production of the brand video series,
+under the Services Agreement of 1 August 2026       USD 12,000.00
+
+Total due                                           USD 12,000.00
+
+Pay to: account ending 4471, Northgate Business Bank
+Please quote FS-2026-104 as the payment reference.

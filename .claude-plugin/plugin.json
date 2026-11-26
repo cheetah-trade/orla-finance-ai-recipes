@@ -1,0 +1,12 @@
+{
+  "name": "finance-ai-recipes",
+  "description": "Finance recipes as skills. Each works on a file you attach; with the Orla plugin connected, on live books. No skill moves money or sends anything without your yes.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Digital Flow Pte. Ltd."
+  },
+  "homepage": "https://orla.finance/en/recipes",
+  "privacyPolicyUrl": "https://orla.finance/en/privacy",
+  "repository": "https://github.com/cheetah-trade/finance-ai-recipes",
+  "license": "CC-BY-NC-4.0 AND MIT"
+}

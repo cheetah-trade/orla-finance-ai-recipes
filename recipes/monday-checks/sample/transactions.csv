@@ -1,0 +1,14 @@
+date,account,description,amount,currency,category,vendor_3mo_avg_monthly,notes
+2026-11-16,Operating,Cloudline Compute,-4820.00,USD,Software,2100.00,
+2026-11-17,Payroll,Payroll run,-11900.00,USD,Payroll,11900.00,
+2026-11-17,Operating,Lakeview Consulting Partners,-5000.00,USD,,,first payment to this payee
+2026-11-18,Operating,Atlas Office Rent,-3600.00,USD,Rent,3600.00,
+2026-11-18,Operating,Stripe payout,8420.00,USD,Sales,,
+2026-11-19,EUR account,Rhein Logistik GmbH,-1750.00,EUR,Logistics,1800.00,
+2026-11-19,Operating,Delta Courier,-148.00,USD,Shipping,150.00,
+2026-11-20,Card clearing,CARD 4417 MERCHANT 8823,-62.40,USD,,,
+2026-11-20,Card clearing,POS PURCHASE LU,-214.00,USD,,,
+2026-11-21,Operating,Transfer to Savings,-5000.00,USD,Transfer,,
+2026-11-21,Savings,Transfer from Operating,5000.00,USD,Transfer,,
+2026-11-23,Operating,Northgate Studio,1000.00,USD,Sales,,part payment of INV-2104
+2026-11-23,Operating,Quickprint Shop,-39.90,USD,,45.00,

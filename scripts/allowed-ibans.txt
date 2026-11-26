@@ -1,0 +1,14 @@
+# IBANs that pass the check digits and stay on purpose. A sample IBAN should
+# fail the checksum; a recipe that tests the checksum itself needs some that
+# pass. Each line: the IBAN without spaces, where the number is published as an
+# example, and the recipe that needs it. Only published example IBANs go here:
+# never one taken from a real invoice, contract or bank statement, and never
+# one composed on a real bank's code.
+GB29NWBK60161331926819  SWIFT IBAN registry example (GB); counterparty-precheck C1
+FI2112345600000785      SWIFT IBAN registry example (FI); counterparty-precheck C2
+LT121000011101001000    SWIFT IBAN registry example (LT); counterparty-precheck C3 new account, bank-eyes-check changed details
+DE89370400440532013000  SWIFT IBAN registry example (DE); counterparty-precheck C3 account on file
+GB82WEST12345698765432  ISO 13616 example (GB); counterparty-precheck C4
+RS35260005601001611379  SWIFT IBAN registry example (RS); counterparty-precheck C5
+GB33BUKB20201555555555  EPC example (GB); counterparty-precheck C6
+EE382200221020145685    SWIFT IBAN registry example (EE); bank-request-reply supplier account

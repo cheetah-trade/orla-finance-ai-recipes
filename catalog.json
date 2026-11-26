@@ -1,0 +1,864 @@
+{
+  "recipes": [
+    {
+      "id": "account-opening-pack",
+      "title": "Check your documents for a new business account or a bank's periodic review",
+      "shelf": "business",
+      "section": "compliance",
+      "time_to_run": "20 minutes, plus the time to collect new documents",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the bank's list, your application draft, the register extract, share registers and a list of document fields you attach, writes nothing",
+        "live": "the same files, plus the state of an account opened through Orla and your monthly money in and out; writes nothing and sends nothing"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bank-request-reply",
+        "counterparty-precheck",
+        "bank-eyes-check"
+      ],
+      "skill": "orla-recipe-account-opening-pack",
+      "files": {
+        "card": "recipes/account-opening-pack/recipe.md",
+        "prompt": "recipes/account-opening-pack/prompt.md",
+        "skill": "recipes/account-opening-pack/SKILL.md",
+        "sample": [
+          "recipes/account-opening-pack/sample/application-draft.txt",
+          "recipes/account-opening-pack/sample/bank-checklist.txt",
+          "recipes/account-opening-pack/sample/documents-index.csv",
+          "recipes/account-opening-pack/sample/my-notes.txt",
+          "recipes/account-opening-pack/sample/ownership.txt",
+          "recipes/account-opening-pack/sample/register-extract.txt",
+          "recipes/account-opening-pack/sample/website-snapshot.txt"
+        ],
+        "answer_key": "recipes/account-opening-pack/sample/answer-key.md",
+        "runs": [
+          "recipes/account-opening-pack/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/account-opening-pack/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/account-opening-pack/runs/2026-11-25-file-claude-sonnet-code-before-fix.md",
+          "recipes/account-opening-pack/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "bank-eyes-check",
+      "title": "Find the document behind every unusual payment, before your bank asks",
+      "shelf": "business",
+      "section": "compliance",
+      "time_to_run": "15 minutes, plus the time to collect missing documents",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the statement, documents list, profile and emails you attach, writes nothing",
+        "live": "reads accounts, transactions, invoices and attachments, writes nothing and sends nothing"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bank-request-reply",
+        "frozen-account-first-day",
+        "account-opening-pack"
+      ],
+      "skill": "orla-recipe-bank-eyes-check",
+      "files": {
+        "card": "recipes/bank-eyes-check/recipe.md",
+        "prompt": "recipes/bank-eyes-check/prompt.md",
+        "skill": "recipes/bank-eyes-check/SKILL.md",
+        "sample": [
+          "recipes/bank-eyes-check/sample/company-profile.txt",
+          "recipes/bank-eyes-check/sample/documents.csv",
+          "recipes/bank-eyes-check/sample/email-portwell-bank-details.txt",
+          "recipes/bank-eyes-check/sample/my-notes.txt",
+          "recipes/bank-eyes-check/sample/statement.csv"
+        ],
+        "answer_key": "recipes/bank-eyes-check/sample/answer-key.md",
+        "runs": [
+          "recipes/bank-eyes-check/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/bank-eyes-check/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "bank-request-reply",
+      "title": "Answer a bank's request for information about your account",
+      "shelf": "business",
+      "section": "compliance",
+      "time_to_run": "20 minutes, plus the time to collect missing documents",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the bank letter, statement and documents you attach, writes nothing",
+        "live": "reads transactions, invoices, contracts and attached documents, prepares a draft reply for you, writes nothing and sends nothing"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bank-eyes-check",
+        "frozen-account-first-day",
+        "counterparty-precheck"
+      ],
+      "skill": "orla-recipe-bank-request-reply",
+      "files": {
+        "card": "recipes/bank-request-reply/recipe.md",
+        "prompt": "recipes/bank-request-reply/prompt.md",
+        "skill": "recipes/bank-request-reply/SKILL.md",
+        "sample": [
+          "recipes/bank-request-reply/sample/bank-request.txt",
+          "recipes/bank-request-reply/sample/documents/approval-email-brightwater.txt",
+          "recipes/bank-request-reply/sample/documents/company-register-extract.txt",
+          "recipes/bank-request-reply/sample/documents/contract-brightwater.txt",
+          "recipes/bank-request-reply/sample/documents/contract-vantor.txt",
+          "recipes/bank-request-reply/sample/documents/invoice-FS-2026-104.txt",
+          "recipes/bank-request-reply/sample/documents/invoice-FS-2026-118.txt",
+          "recipes/bank-request-reply/sample/documents/invoice-vantor-VC-2026-11.txt",
+          "recipes/bank-request-reply/sample/documents/loan-agreement-director.txt",
+          "recipes/bank-request-reply/sample/my-notes.txt",
+          "recipes/bank-request-reply/sample/statement.csv"
+        ],
+        "answer_key": "recipes/bank-request-reply/sample/answer-key.md",
+        "runs": [
+          "recipes/bank-request-reply/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/bank-request-reply/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/bank-request-reply/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "bills-due",
+      "title": "Bills due this week and what can wait",
+      "shelf": "business",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the bills file and the cash line you attach, writes nothing",
+        "live": "reads open bills, balances and payments waiting for a signature, prepares a proposal for you, writes nothing, and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "monday-checks",
+        "cash-forecast",
+        "debtors"
+      ],
+      "skill": "orla-recipe-bills-due",
+      "files": {
+        "card": "recipes/bills-due/recipe.md",
+        "prompt": "recipes/bills-due/prompt.md",
+        "skill": "recipes/bills-due/SKILL.md",
+        "sample": [
+          "recipes/bills-due/sample/bills.csv",
+          "recipes/bills-due/sample/cash.csv"
+        ],
+        "answer_key": "recipes/bills-due/sample/answer-key.md",
+        "runs": [
+          "recipes/bills-due/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/bills-due/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "cash-forecast",
+      "title": "How long our cash lasts and where it runs low",
+      "shelf": "business",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the one file you attach, writes nothing",
+        "live": "reads balances, invoices, bills and scheduled items, builds a forecast for you to read, writes nothing, and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bills-due",
+        "debtors",
+        "investor-update"
+      ],
+      "skill": "orla-recipe-cash-forecast",
+      "files": {
+        "card": "recipes/cash-forecast/recipe.md",
+        "prompt": "recipes/cash-forecast/prompt.md",
+        "skill": "recipes/cash-forecast/SKILL.md",
+        "sample": [
+          "recipes/cash-forecast/sample/forecast-inputs.csv"
+        ],
+        "answer_key": "recipes/cash-forecast/sample/answer-key.md",
+        "runs": [
+          "recipes/cash-forecast/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/cash-forecast/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "counterparty-precheck",
+      "title": "Check a new client or supplier before the first payment",
+      "shelf": "business",
+      "section": "compliance",
+      "time_to_run": "15 minutes for the lookups, 5 minutes for the run",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the list and the lookups you attach, writes nothing",
+        "live": "reads contacts, Orla's screening result for each one and the payments waiting, writes nothing, starts no paid check"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "account-opening-pack",
+        "bank-request-reply",
+        "bills-due"
+      ],
+      "skill": "orla-recipe-counterparty-precheck",
+      "files": {
+        "card": "recipes/counterparty-precheck/recipe.md",
+        "prompt": "recipes/counterparty-precheck/prompt.md",
+        "skill": "recipes/counterparty-precheck/SKILL.md",
+        "sample": [
+          "recipes/counterparty-precheck/sample/email-bank-details-change.txt",
+          "recipes/counterparty-precheck/sample/new-counterparties.csv",
+          "recipes/counterparty-precheck/sample/registry-lookups.md"
+        ],
+        "answer_key": "recipes/counterparty-precheck/sample/answer-key.md",
+        "runs": [
+          "recipes/counterparty-precheck/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/counterparty-precheck/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "debtors",
+      "title": "Who owes us and who to remind",
+      "shelf": "business",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the file you attach, writes nothing",
+        "live": "reads invoices, prepares reminder previews, sends one only on your yes for that invoice"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bills-due",
+        "cash-forecast",
+        "monday-checks"
+      ],
+      "skill": "orla-recipe-debtors",
+      "files": {
+        "card": "recipes/debtors/recipe.md",
+        "prompt": "recipes/debtors/prompt.md",
+        "skill": "recipes/debtors/SKILL.md",
+        "sample": [
+          "recipes/debtors/sample/receivables.csv"
+        ],
+        "answer_key": "recipes/debtors/sample/answer-key.md",
+        "runs": [
+          "recipes/debtors/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/debtors/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "firm-ai-policy",
+      "title": "Draft an AI policy for your firm in two pages",
+      "shelf": "accountant",
+      "time_to_run": "15 minutes, plus the time your people need to answer the questionnaire (about 30 minutes if you fill it in together)",
+      "modes": {
+        "file": "prompt.md",
+        "live": "none"
+      },
+      "data_access": {
+        "file": "reads the questionnaire and any rule or terms text you attach, writes a draft for the partners, sends nothing",
+        "live": "none, because the policy needs the firm's own tools, plans and settings, and Orla's connection holds books, not those"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": []
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "missing-docs-letter",
+        "take-over-month",
+        "statement-exceptions"
+      ],
+      "skill": "orla-recipe-firm-ai-policy",
+      "files": {
+        "card": "recipes/firm-ai-policy/recipe.md",
+        "prompt": "recipes/firm-ai-policy/prompt.md",
+        "skill": "recipes/firm-ai-policy/SKILL.md",
+        "sample": [
+          "recipes/firm-ai-policy/sample/firm-questionnaire.md"
+        ],
+        "answer_key": "recipes/firm-ai-policy/sample/answer-key.md",
+        "runs": [
+          "recipes/firm-ai-policy/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/firm-ai-policy/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/firm-ai-policy/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "frozen-account-first-day",
+      "title": "Your business account is frozen: what to do on the first day",
+      "shelf": "business",
+      "section": "compliance",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the bank's message, balances, payments due and contact log you attach, writes nothing",
+        "live": "reads accounts, balances, payments due, the payment queue and upcoming bills, writes nothing, sends nothing, moves no money"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "bank-request-reply",
+        "cash-forecast",
+        "bills-due"
+      ],
+      "skill": "orla-recipe-frozen-account-first-day",
+      "files": {
+        "card": "recipes/frozen-account-first-day/recipe.md",
+        "prompt": "recipes/frozen-account-first-day/prompt.md",
+        "skill": "recipes/frozen-account-first-day/SKILL.md",
+        "sample": [
+          "recipes/frozen-account-first-day/sample/accounts.csv",
+          "recipes/frozen-account-first-day/sample/bank-message.txt",
+          "recipes/frozen-account-first-day/sample/call-log.txt",
+          "recipes/frozen-account-first-day/sample/my-notes.txt",
+          "recipes/frozen-account-first-day/sample/upcoming.csv"
+        ],
+        "answer_key": "recipes/frozen-account-first-day/sample/answer-key.md",
+        "runs": [
+          "recipes/frozen-account-first-day/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/frozen-account-first-day/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/frozen-account-first-day/runs/2026-11-25-file-claude-sonnet-code-before-fix.md",
+          "recipes/frozen-account-first-day/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "investor-update",
+      "title": "A monthly investor update from the month's numbers",
+      "shelf": "business",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the figures file and your notes, writes nothing, and drafts a letter that stays in the conversation",
+        "live": "reads the month's report and cash flow, drafts a letter for you to edit, writes nothing, and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "cash-forecast",
+        "month-close",
+        "monday-checks"
+      ],
+      "skill": "orla-recipe-investor-update",
+      "files": {
+        "card": "recipes/investor-update/recipe.md",
+        "prompt": "recipes/investor-update/prompt.md",
+        "skill": "recipes/investor-update/SKILL.md",
+        "sample": [
+          "recipes/investor-update/sample/founder-notes.txt",
+          "recipes/investor-update/sample/monthly-figures.csv"
+        ],
+        "answer_key": "recipes/investor-update/sample/answer-key.md",
+        "runs": [
+          "recipes/investor-update/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/investor-update/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "missing-docs-letter",
+      "title": "One letter to the client for everything that is missing",
+      "shelf": "accountant",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the three files you attach, writes nothing, drafts a letter for you to send yourself",
+        "live": "reads one client's expenses without a document, their transactions and the files on them, drafts a letter for a person, sends nothing and has no write step"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "take-over-month",
+        "year-end-contractors",
+        "firm-ai-policy"
+      ],
+      "skill": "orla-recipe-missing-docs-letter",
+      "files": {
+        "card": "recipes/missing-docs-letter/recipe.md",
+        "prompt": "recipes/missing-docs-letter/prompt.md",
+        "skill": "recipes/missing-docs-letter/SKILL.md",
+        "sample": [
+          "recipes/missing-docs-letter/sample/documents_received.csv",
+          "recipes/missing-docs-letter/sample/request_log.csv",
+          "recipes/missing-docs-letter/sample/transactions.csv"
+        ],
+        "answer_key": "recipes/missing-docs-letter/sample/answer-key.md",
+        "runs": [
+          "recipes/missing-docs-letter/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/missing-docs-letter/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/missing-docs-letter/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "monday-checks",
+      "title": "What needs my attention on Monday, in ten minutes",
+      "shelf": "business",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the three files you attach, writes nothing",
+        "live": "reads balances, invoices, bills and transactions, prepares a list for you, writes nothing, and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "debtors",
+        "bills-due",
+        "month-close"
+      ],
+      "skill": "orla-recipe-monday-checks",
+      "files": {
+        "card": "recipes/monday-checks/recipe.md",
+        "prompt": "recipes/monday-checks/prompt.md",
+        "skill": "recipes/monday-checks/SKILL.md",
+        "sample": [
+          "recipes/monday-checks/sample/accounts.csv",
+          "recipes/monday-checks/sample/open-items.csv",
+          "recipes/monday-checks/sample/transactions.csv"
+        ],
+        "answer_key": "recipes/monday-checks/sample/answer-key.md",
+        "runs": [
+          "recipes/monday-checks/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/monday-checks/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "month-close",
+      "title": "Close the month without missing a step",
+      "shelf": "business",
+      "time_to_run": "20 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the three files you attach, writes nothing",
+        "live": "reads the month's status, transactions, bills and reports, prepares drafts for a person, writes nothing, and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "sort-uncategorized",
+        "statement-import",
+        "investor-update"
+      ],
+      "skill": "orla-recipe-month-close",
+      "files": {
+        "card": "recipes/month-close/recipe.md",
+        "prompt": "recipes/month-close/prompt.md",
+        "skill": "recipes/month-close/SKILL.md",
+        "sample": [
+          "recipes/month-close/sample/bills.csv",
+          "recipes/month-close/sample/ledger_summary.csv",
+          "recipes/month-close/sample/october_transactions.csv"
+        ],
+        "answer_key": "recipes/month-close/sample/answer-key.md",
+        "runs": [
+          "recipes/month-close/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/month-close/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "sort-uncategorized",
+      "title": "Sort the transactions that have no category",
+      "shelf": "business",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the two files you attach, writes nothing",
+        "live": "reads uncategorised rows and your categories, previews changes without writing, and changes rows or creates a rule only on your yes for that exact item"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "month-close",
+        "statement-import",
+        "monday-checks"
+      ],
+      "skill": "orla-recipe-sort-uncategorized",
+      "files": {
+        "card": "recipes/sort-uncategorized/recipe.md",
+        "prompt": "recipes/sort-uncategorized/prompt.md",
+        "skill": "recipes/sort-uncategorized/SKILL.md",
+        "sample": [
+          "recipes/sort-uncategorized/sample/context.csv",
+          "recipes/sort-uncategorized/sample/uncategorized.csv"
+        ],
+        "answer_key": "recipes/sort-uncategorized/sample/answer-key.md",
+        "runs": [
+          "recipes/sort-uncategorized/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/sort-uncategorized/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "statement-exceptions",
+      "title": "Reconcile a client's bank statement to their books and sort the exceptions",
+      "shelf": "accountant",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the statement and the books export you attach, writes nothing",
+        "live": "reads the client's books and Orla's comparison; on your yes, files a PDF statement in the client's Documents so Orla can read it (one reading from the client's AI allowance); never imports the statement, books a line or changes the books"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "take-over-month",
+        "missing-docs-letter",
+        "firm-ai-policy"
+      ],
+      "skill": "orla-recipe-statement-exceptions",
+      "files": {
+        "card": "recipes/statement-exceptions/recipe.md",
+        "prompt": "recipes/statement-exceptions/prompt.md",
+        "skill": "recipes/statement-exceptions/SKILL.md",
+        "sample": [
+          "recipes/statement-exceptions/sample/bank-statement-2026-10.csv",
+          "recipes/statement-exceptions/sample/client-books-2026-10.csv"
+        ],
+        "answer_key": "recipes/statement-exceptions/sample/answer-key.md",
+        "runs": [
+          "recipes/statement-exceptions/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/statement-exceptions/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "statement-import",
+      "title": "Load a bank statement and prove it adds up",
+      "shelf": "business",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the statement and the books export you attach, writes nothing",
+        "live": "reads the account, previews what would be booked without writing, hands in the statement file and imports it only on your yes for that exact step and preview"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "month-close",
+        "sort-uncategorized",
+        "monday-checks"
+      ],
+      "skill": "orla-recipe-statement-import",
+      "files": {
+        "card": "recipes/statement-import/recipe.md",
+        "prompt": "recipes/statement-import/prompt.md",
+        "skill": "recipes/statement-import/SKILL.md",
+        "sample": [
+          "recipes/statement-import/sample/bank-statement-2026-11.csv",
+          "recipes/statement-import/sample/books-ledger-2026-11.csv"
+        ],
+        "answer_key": "recipes/statement-import/sample/answer-key.md",
+        "runs": [
+          "recipes/statement-import/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/statement-import/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "take-over-month",
+      "title": "\"Take over a client's month: what is missing and what does not add up\"",
+      "shelf": "accountant",
+      "time_to_run": "20 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the two files you attach, writes nothing, drafts questions for you to send",
+        "live": "reads one client's month, accounts, transactions and reconciliation answers, drafts questions for you to send, writes nothing and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "statement-exceptions",
+        "missing-docs-letter",
+        "year-end-contractors"
+      ],
+      "skill": "orla-recipe-take-over-month",
+      "files": {
+        "card": "recipes/take-over-month/recipe.md",
+        "prompt": "recipes/take-over-month/prompt.md",
+        "skill": "recipes/take-over-month/SKILL.md",
+        "sample": [
+          "recipes/take-over-month/sample/balances.csv",
+          "recipes/take-over-month/sample/transactions.csv"
+        ],
+        "answer_key": "recipes/take-over-month/sample/answer-key.md",
+        "runs": [
+          "recipes/take-over-month/runs/2026-11-25-file-claude-haiku-nocode-before-fix.md",
+          "recipes/take-over-month/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/take-over-month/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "year-end-contractors",
+      "title": "\"Year-end contractor list and questions for the tax preparer (US only)\"",
+      "shelf": "accountant",
+      "time_to_run": "25 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the two files you attach, writes nothing, drafts questions for you to send",
+        "live": "reads one client's accounts, the year's transactions, supplier contacts and paid bills, drafts questions for you to send, writes nothing and has no write step at all"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-25",
+          "Claude Haiku, without code execution, 2026-11-25"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-25"
+        ]
+      },
+      "last_checked": "2026-11-25",
+      "next_check": "2027-02-25",
+      "video": "none yet",
+      "related": [
+        "take-over-month",
+        "missing-docs-letter",
+        "statement-exceptions"
+      ],
+      "skill": "orla-recipe-year-end-contractors",
+      "files": {
+        "card": "recipes/year-end-contractors/recipe.md",
+        "prompt": "recipes/year-end-contractors/prompt.md",
+        "skill": "recipes/year-end-contractors/SKILL.md",
+        "sample": [
+          "recipes/year-end-contractors/sample/vendor_payments_2026.csv",
+          "recipes/year-end-contractors/sample/vendors.csv"
+        ],
+        "answer_key": "recipes/year-end-contractors/sample/answer-key.md",
+        "runs": [
+          "recipes/year-end-contractors/runs/2026-11-25-file-claude-haiku-nocode.md",
+          "recipes/year-end-contractors/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    }
+  ]
+}

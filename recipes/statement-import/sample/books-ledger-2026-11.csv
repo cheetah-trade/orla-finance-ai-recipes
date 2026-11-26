@@ -1,0 +1,18 @@
+Account,Business current account (books)
+Currency,USD
+Balance in books at 2026-10-31,18320.50
+Exported,2026-11-25
+Vendor card Bluebird Studio account,****4410
+
+date,payee,amount,counterparty_account,source,memo
+2026-11-02,Meridian Foods INV-2031,4800.00,****8812,bank feed,
+2026-11-02,Payroll batch NOV-A,-6200.00,****0107,bank feed,
+2026-11-03,Cloudhost Ltd monthly hosting,-312.40,****3350,bank feed,
+2026-11-04,Bluebird Studio design retainer,-1200.00,****4410,bank feed,
+2026-11-05,Pier Street Properties rent Nov,-2100.00,****6021,bank feed,
+2026-11-06,Paperline Stationery,-87.20,****7790,bank feed,
+2026-11-07,Osprey Labs INV-2028,3000.00,****5544,bank feed,
+2026-11-10,Courier Express Ltd parcel,-45.00,****2208,bank feed,
+2026-11-11,Harlow Insurance premium,-184.00,****9183,bank feed,
+2026-11-12,Northwind Supplies order 5521,-640.00,****1170,bank feed,
+2026-11-18,Greenleaf Gardening cheque 0042,-850.00,****5051,manual entry,cheque posted by hand

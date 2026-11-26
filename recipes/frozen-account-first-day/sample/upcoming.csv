@@ -1,0 +1,10 @@
+date,direction,party,what,amount,currency,how,from_or_to_account
+2026-11-26,out,Cloudnine Hosting,hosting,640.00,GBP,card ending 5512,Main current ending 2291
+2026-11-26,in,Halberd Engineering Ltd,invoice PF-1187,15000.00,GBP,bank transfer,Main current ending 2291
+2026-11-27,out,Arden Properties Ltd,rent December,4200.00,GBP,standing order,Main current ending 2291
+2026-11-28,out,Staff (6 people),salaries November,21500.00,GBP,bank transfers,Main current ending 2291
+2026-12-01,out,Kiln Studio Ltd,supplier bill KS-559,3100.00,GBP,bank transfer,Main current ending 2291
+2026-12-02,in,Marrow Retail Ltd,invoice PF-1191,8000.00,GBP,bank transfer,Main current ending 2291
+2026-12-05,out,Fenmore Finance,equipment loan repayment,1250.00,GBP,direct debit,Main current ending 2291
+2026-12-07,out,Tax authority,VAT return payment,9400.00,GBP,bank transfer,Main current ending 2291
+2026-12-08,out,Telco One,phones and internet,310.00,GBP,direct debit,Lowfield current ending 8840

@@ -1,0 +1,41 @@
+record_type,category_id,category_name,category_kind,date,payee,amount,currency
+category,C01,Sales revenue,income,,,,
+category,C02,Other income,income,,,,
+category,C03,Software,expense,,,,
+category,C04,Rent,expense,,,,
+category,C05,Payroll,expense,,,,
+category,C06,Marketing,expense,,,,
+category,C07,Office supplies,expense,,,,
+category,C08,Equipment,expense,,,,
+category,C09,Shipping,expense,,,,
+category,C10,Travel,expense,,,,
+category,C11,Meals,expense,,,,
+category,C12,Professional fees,expense,,,,
+category,C13,Taxes and licences,expense,,,,
+category,C14,Loan repayment,loan,,,,
+category,C15,Transfers,transfers,,,,
+category,C16,Cash withdrawal,cash,,,,
+history,C03,Software,expense,2026-08-03,Lumen Software,-480.00,USD
+history,C03,Software,expense,2026-09-03,Lumen Software,-480.00,USD
+history,C03,Software,expense,2026-10-03,Lumen Software,-480.00,USD
+history,C04,Rent,expense,2026-09-01,Harbor Realty,-4200.00,USD
+history,C04,Rent,expense,2026-10-01,Harbor Realty,-4200.00,USD
+history,C01,Sales revenue,income,2026-09-02,Northwind Ltd,9600.00,USD
+history,C01,Sales revenue,income,2026-10-02,Northwind Ltd,9600.00,USD
+history,C05,Payroll,expense,2026-09-04,Gusto payroll,-7800.00,USD
+history,C05,Payroll,expense,2026-10-04,Gusto payroll,-7800.00,USD
+history,C01,Sales revenue,income,2026-09-09,Stripe payout,5540.00,USD
+history,C01,Sales revenue,income,2026-10-09,Stripe payout,5720.00,USD
+history,C07,Office supplies,expense,2026-09-14,Amazon,-29.99,USD
+history,C08,Equipment,expense,2026-09-22,Amazon,-899.00,USD
+history,C03,Software,expense,2026-10-11,Amazon,-12.99,USD
+history,C10,Travel,expense,2026-09-17,Uber,-27.80,USD
+history,C10,Travel,expense,2026-10-08,Uber,-19.60,USD
+history,C09,Shipping,expense,2026-09-12,Fastlane Couriers,-58.00,USD
+history,C09,Shipping,expense,2026-10-08,Fastlane Couriers,-64.20,USD
+history,C11,Meals,expense,2026-10-14,Blue Door Cafe,-52.40,USD
+history,C04,Rent,expense,2026-09-05,Berlin Coworking,-650.00,EUR
+history,C04,Rent,expense,2026-10-04,Berlin Coworking,-650.00,EUR
+history,C06,Marketing,expense,2026-09-16,Brightside Marketing,-1400.00,USD
+history,C06,Marketing,expense,2026-10-16,Brightside Marketing,-1500.00,USD
+history,C13,Taxes and licences,expense,2026-08-18,State Dept of Revenue,-1980.00,USD

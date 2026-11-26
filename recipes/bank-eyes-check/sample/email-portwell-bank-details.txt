@@ -1,0 +1,19 @@
+From: accounts@portwell-print.example
+To: finance@calderbay.example
+Date: 3 November 2026, 16:52
+Subject: New bank details - please update
+
+Dear Calder Bay team,
+
+Our bank has changed. From today please pay all Portwell invoices, including PP-845, to our new
+account:
+
+Account name: Portwell Print
+Bank: Baltic Commerce UAB, Vilnius, Lithuania
+IBAN: LT12 1000 0111 0100 1000
+
+Please do not use the old account any more. We cannot take calls this week because of the move,
+so please reply by email only.
+
+Regards,
+Accounts, Portwell Print Lda

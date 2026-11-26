@@ -1,0 +1,4 @@
+account,account_type,currency,balance_convention,prior_month,prior_month_closed_on,prior_month_closing,book_opening,book_closing,statement_closing,statement_note
+CHK-4417,bank,USD,positive is money held,2026-09,2026-10-08,21480.00,21230.00,29938.68,11948.68,
+SAV-5520,bank,USD,positive is money held,2026-09,2026-10-08,40000.00,40000.00,45012.35,45012.35,
+CARD-9012,credit card,USD,positive is owed to the card issuer,2026-09,2026-10-08,1800.00,1800.00,-640.00,,no statement received for October

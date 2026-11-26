@@ -1,0 +1,12 @@
+# Link hosts a recipe or a page of this repository may point to. A host with a
+# path accepts links under that path only. Add a host in its own pull request,
+# with the reason in the description.
+orla.finance
+app.orla.finance
+github.com/cheetah-trade/
+creativecommons.org/licenses/by-nc/4.0
+opensource.org/license/mit
+# the IRS instructions page the US year-end recipe sends a person to read on the day (coordinator 26.11.2026)
+www.irs.gov
+# a phishing trap inside missing-docs-letter's sample: a reserved .example name that resolves nowhere (coordinator 26.11.2026)
+secure-docs-upload.example

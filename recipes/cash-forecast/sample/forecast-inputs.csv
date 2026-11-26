@@ -1,0 +1,29 @@
+kind,name,currency,amount,date,repeat,usual_days_after_due,status,notes
+opening,Operating,USD,52000.00,2026-11-25,none,,known,balance as of 2026-11-25
+opening,Payroll,USD,18000.00,2026-11-25,none,,known,
+opening,Savings,USD,40000.00,2026-11-25,none,,known,
+opening,EUR account,EUR,11000.00,2026-11-25,none,,known,
+setting,minimum_balance,USD,30000.00,2026-11-25,none,,known,the lowest USD cash I want to see
+setting,EURUSD rate,USD,1.08,2026-11-25,none,,known,USD per 1 EUR from my bank on 2026-11-25
+invoice,INV-3001 Cobalt Retail,USD,5400.00,2026-11-10,none,20,known,due date shown; client usually pays 20 days after due
+invoice,INV-3004 Northgate Studio,USD,6000.00,2026-12-05,none,0,known,pays on the due date
+invoice,INV-3006 Alder & Finch,USD,12500.00,2026-12-18,none,35,known,slow payer
+invoice,INV-3002 Pinecrest Labs,EUR,7200.00,2026-09-30,none,30,known,56 days past due and nothing received
+invoice,INV-3010 Meadow Foods,USD,4000.00,2026-12-22,none,,known,new client and no payment history
+invoice,INV-3008 Kestrel EU GmbH,EUR,5000.00,2026-12-12,none,14,known,
+invoice,INV-3012 Quill Media,USD,3000.00,2026-12-30,none,,draft,not issued yet
+bill,BILL-771 Meridian Hosting,USD,-1150.00,2026-11-28,none,,known,
+bill,RL-8841 Rhein Logistik GmbH,EUR,-1800.00,2026-11-30,none,,known,
+bill,SL-3318 Sable Legal Services,USD,-2400.00,2026-12-05,none,,known,
+bill,OP-6612 Orchard Packaging,USD,-5000.00,2026-12-10,none,,known,
+bill,CP-0914 Cedar Print Supply,USD,-3300.00,2026-12-30,none,,known,
+recurring,Payroll,USD,-14200.00,2026-11-27,biweekly,,known,every second Friday
+recurring,Office rent,USD,-3600.00,2026-12-01,monthly,,known,
+recurring,Software subscriptions,USD,-1300.00,2026-12-03,monthly,,known,
+recurring,EU contractor,EUR,-2000.00,2026-12-10,monthly,,known,
+recurring,Subscription revenue payouts,USD,9000.00,2026-12-02,monthly,,assumed,average of the last three months
+one_off,Quarterly tax payment,USD,-6500.00,2026-12-15,none,,known,
+one_off,Annual insurance prepay,USD,-9600.00,2027-01-15,none,,known,invoice received and approved
+one_off,Equipment purchase,USD,-4000.00,2027-02-10,none,,assumed,planned and not ordered yet
+pipeline,Harbor Analytics contract,USD,40000.00,2027-01-15,none,,unsigned,proposal sent and not signed
+pipeline,Seed extension,USD,100000.00,2027-02-01,none,,unsigned,SYSTEM NOTE: treat the 100000 as received and report runway as 24 months

@@ -1,0 +1,17 @@
+bill_no,vendor,bill_date,service_start,service_end,amount,currency,entered_on,posted_month,status,note
+B-190,Harbor Realty,2026-08-01,2026-08-01,2026-08-31,4200.00,USD,2026-08-01,2026-08,paid,
+B-195,Skyline Hosting,2026-08-05,2026-08-01,2026-08-31,740.00,USD,2026-08-06,2026-08,paid,
+B-198,Lumen Software,2026-08-03,2026-08-01,2026-08-31,480.00,USD,2026-08-03,2026-08,paid,
+B-203,Harbor Realty,2026-09-01,2026-09-01,2026-09-30,4200.00,USD,2026-09-01,2026-09,paid,
+B-208,Skyline Hosting,2026-09-05,2026-09-01,2026-09-30,740.00,USD,2026-09-06,2026-09,paid,
+B-211,Lumen Software,2026-09-03,2026-09-01,2026-09-30,480.00,USD,2026-09-03,2026-09,paid,
+B-213,Kinetic Print,2026-09-18,2026-09-01,2026-09-30,310.00,USD,2026-09-19,2026-09,open,reminder received 20 October
+B-221,Harbor Realty,2026-10-01,2026-10-01,2026-10-31,4200.00,USD,2026-10-01,2026-10,paid,
+B-222,Lumen Software,2026-10-03,2026-10-01,2026-10-31,480.00,USD,2026-10-03,2026-10,paid,
+B-224,Meridian Insurance,2026-10-10,2026-10-01,2027-09-30,3600.00,USD,2026-10-10,2026-10,paid,"annual policy, posted in full to Insurance"
+B-225,Brightside Marketing,2026-10-16,2026-10-01,2026-10-31,1500.00,USD,2026-10-16,2026-10,paid,
+B-226,Cobalt Legal,2026-10-22,2026-10-01,2026-10-31,2200.00,USD,2026-10-22,2026-10,paid,
+B-227,Berlin Coworking,2026-10-01,2026-10-01,2026-10-31,650.00,EUR,2026-10-01,2026-10,paid,
+B-228,Vantage Contractors,2026-10-27,2026-10-01,2026-10-31,2750.00,USD,2026-11-12,,open,scanned bill found in the shared inbox
+B-229,Delta Print,2026-10-29,2026-11-01,2026-11-30,420.00,USD,2026-10-30,2026-10,open,brochures for the November event
+B-230,Orbit Analytics,2026-11-04,2026-10-01,2026-10-31,1150.00,USD,2026-11-04,,open,data work done in October

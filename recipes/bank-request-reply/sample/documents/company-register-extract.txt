@@ -1,0 +1,14 @@
+COMPANY REGISTER EXTRACT (invented document for this sample)
+
+Company name: FERNHILL STUDIO LTD
+Company number: 11482093
+Status: Active
+Incorporated: 14 February 2019
+Nature of business: motion picture, video and television programme production
+
+Officers:
+- SOKOLOV, Mikhail. Director. Appointed 14 February 2019.
+- NAIR, Priya. Director. Appointed 3 May 2021.
+
+Persons with significant control:
+- Mikhail Sokolov. Ownership of shares: 75% or more.

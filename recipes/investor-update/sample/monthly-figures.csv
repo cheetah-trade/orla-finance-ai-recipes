@@ -1,0 +1,9 @@
+month,books_reconciled,cash_in_customers,cash_in_one_off,cash_out_payroll,cash_out_vendors,cash_out_marketing,cash_out_one_off,cash_at_month_end,mrr_subscriptions,mrr_one_off_service_fee,mrr_total_reported,customers_end,currency,note
+2026-03,yes,41000,0,38000,14200,6000,0,283800,40200,0,40200,49,USD,
+2026-04,yes,42500,0,38000,14800,6500,3000,264000,41300,0,41300,50,USD,one-off: legal fees for the contract template
+2026-05,yes,43200,0,38000,15100,7000,0,247100,42600,0,42600,52,USD,
+2026-06,yes,44800,0,39500,15000,7000,0,230400,43700,0,43700,53,USD,
+2026-07,yes,46000,0,39500,15600,7500,0,213800,44900,0,44900,55,USD,
+2026-08,yes,47300,2500,39500,15900,8000,0,200200,46200,1500,47700,56,USD,one-off in: refund of an overpaid tax advance; one-off service fee: implementation project for one customer
+2026-09,yes,49600,0,39500,16200,8500,0,185600,47500,0,47500,58,USD,
+2026-10,no,48900,12000,44000,16500,10500,9600,164750,49300,4000,53300,61,USD,one-off in: grant payment received; one-off out: annual insurance premium; one-off service fee: onboarding project; month-end bank reconciliation not finished

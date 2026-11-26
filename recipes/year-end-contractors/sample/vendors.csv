@@ -1,0 +1,14 @@
+vendor_id,legal_name,trade_name,w9_on_file,w9_entity_type,w9_date,note
+V01,Teresa Fernandez,Fernway Cleaning Co,yes,Individual/sole proprietor,2019-03-02,
+V02,Cobalt Data Systems Inc,,no,,,W-9 requested by email 2026-02-11
+V03,Juniper Ridge Consulting LLC,,yes,LLC (tax classification line left blank),2026-03-30,
+V04,Owen Hartley,Tidewater Copywriting,yes,Individual/sole proprietor,2025-06-01,
+V05,Marisol Vega,,yes,Individual/sole proprietor,2026-05-01,
+V06,Priya Nandakumar,Alder Street Photography,yes,Individual/sole proprietor,2025-04-20,
+V07,Northwind Translation,,yes,Individual/sole proprietor,2026-09-30,
+V08,Keller & Ames PC,,yes,S corporation,2024-11-05,Law firm
+V09,Rowan Fitzgerald,,yes,Individual/sole proprietor,2026-07-01,
+V10,Graystone AV Equipment Inc,,yes,C corporation,2026-06-20,
+V11,Pinecrest IT Services,,no,,,
+V12,CloudDesk Software Inc,,no,,,
+V13,Bright Pixel Media LLC,,yes,LLC taxed as S corporation,2026-02-15,

@@ -1,0 +1,16 @@
+Tidewater Business Bank: application draft (our answers so far, not sent)
+
+Company name: Saltmarsh Analytics Limited
+Registered address: Suite 4, 21 Harbour Street, Leith, Edinburgh EH6 6QR
+Trading address: same
+Directors: Mara Lindqvist, Tomas Reyes
+Beneficial owners (25% or more): Mara Lindqvist, 40%, through Lindqvist Holdings Ltd
+Website: www.saltmarsh-analytics.example
+What the business does: AI-driven analytics platform for global logistics and retail leaders,
+serving enterprise clients across Europe, the Middle East and Asia.
+Countries of clients: United Kingdom, Germany, United Arab Emirates, Singapore
+Staff: 2
+Expected monthly money in: GBP 2,500,000
+Expected monthly money out: GBP 2,300,000
+How estimated: growth plan
+First deposit: GBP 50,000 from Lindqvist Holdings Ltd

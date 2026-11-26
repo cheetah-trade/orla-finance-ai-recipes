@@ -1,0 +1,25 @@
+SERVICES AGREEMENT (invented document for this sample)
+
+Date: 1 August 2026
+
+Between:
+(1) Fernhill Studio Ltd, a company registered in England and Wales, company number 11482093
+    ("the Studio"); and
+(2) Brightwater Media Inc., a Delaware corporation ("the Client").
+
+1. Services. The Studio will produce a brand video series for the Client in three phases.
+
+2. Fees.
+   Phase 1 (concept and script): USD 6,000.00
+   Phase 2 (production): USD 12,000.00
+   Phase 3 (final edit and delivery): USD 48,000.00
+
+3. Invoicing and payment. The Studio invoices each phase on completion. The Client pays each
+   invoice within 30 days of the invoice date to the Studio's account ending 4471.
+
+4. Acceptance. A phase is complete when the Client approves it in writing.
+
+5. Term. This agreement starts on the date above and ends when Phase 3 is paid.
+
+Signed for the Studio: Priya Nair, Director
+Signed for the Client: Dana Holt, Head of Brand

@@ -1,0 +1,8 @@
+Contact with Hartwell Bank so far (kept by the finance lead)
+
+2026-11-24 18:40  Secure message received (see bank-message.txt).
+2026-11-24 19:05  Called the business line. 42 minutes on hold. The agent said she could not discuss
+                  the review and could not give a reference. Did not ask for her name.
+2026-11-25 08:50  Wrote in the online banking chat: "Why is our account blocked? We have payroll on
+                  Friday." No reply yet.
+2026-11-25 08:55  Card payment for a taxi on card ending 5512 declined.

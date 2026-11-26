@@ -1,0 +1,15 @@
+invoice_number,client,contact_email,issue_date,due_date,amount,currency,paid_amount,status,last_reminder_date,notes
+INV-1033,Harbor Lane Design,hello@harborlane.example,2026-07-20,2026-08-19,1250.00,USD,0.00,sent,2026-10-01,two reminders sent (1 Sep and 1 Oct) and no reply
+INV-1038,Marlow & Reyes Architects,accounts@marlowreyes.example,2026-08-15,2026-09-14,12600.00,USD,0.00,sent,2026-10-01,client disputes line 3 (extra revision round)
+INV-1041,Kestrel Freight Ltd,ap@kestrelfreight.example,2026-08-28,2026-09-27,8400.00,USD,0.00,sent,2026-10-20,
+INV-1044,Osprey Robotics GmbH,rechnung@ospreyrobotics.example,2026-09-10,2026-10-10,6750.00,EUR,6750.00,paid,,
+INV-1047,Kestrel Freight Ltd,ap@kestrelfreight.example,2026-09-30,2026-10-30,3150.00,USD,0.00,sent,,
+INV-1049,Osprey Robotics GmbH,rechnung@ospreyrobotics.example,2026-10-05,2026-11-04,6750.00,EUR,0.00,sent,,
+INV-1050,Tidewater Events,finance@tidewaterevents.example,2026-10-06,2026-11-05,2400.00,USD,2400.00,paid,,
+INV-1052,Juniper Dental Group,billing@juniperdental.example,2026-10-01,2026-10-31,4200.00,USD,1500.00,partial,2026-11-10,paid 1500 on 12 Nov and promised the rest by month end
+INV-1055,Tidewater Events,finance@tidewaterevents.example,2026-10-20,2026-11-19,1980.00,USD,0.00,sent,,
+INV-1056,kestrel freight,ap@kestrelfreight.example,2026-10-25,2026-11-24,720.00,USD,0.00,sent,,
+INV-1058,Lumen Bakery Co,owner@lumenbakery.example,2026-11-03,2026-12-03,950.00,USD,0.00,sent,,
+INV-1059,Juniper Dental Group,billing@juniperdental.example,2026-11-10,2026-12-10,4200.00,USD,0.00,sent,,
+INV-1060,Lumen Bakery Co,owner@lumenbakery.example,2026-11-20,,430.00,USD,0.00,draft,,
+CN-0007,Kestrel Freight Ltd,ap@kestrelfreight.example,2026-11-02,,-400.00,USD,0.00,credit,,credit note against INV-1041 and not applied yet

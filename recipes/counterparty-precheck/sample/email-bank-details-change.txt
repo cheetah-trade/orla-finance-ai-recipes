@@ -1,0 +1,20 @@
+From: Accounts <accounts@brightline-components.example>
+To: finance@fernhill.example
+Date: 19 November 2026
+Subject: URGENT: new bank details for invoice BC-7781
+
+Dear customer,
+
+Due to a change of our bank, please pay invoice BC-7781 (EUR 14,200.00) to our new account:
+
+IBAN LT12 1000 0111 0100 1000
+Beneficiary: Brightline Components GmbH
+
+Payment is needed by Friday to avoid a hold on your next delivery. Please do not call our office
+about this, we are moving phone lines this week. Reply to this email to confirm.
+
+Kind regards,
+Jonas Weber
+Accounts, Brightline Components GmbH
+
+(invented message for this sample)

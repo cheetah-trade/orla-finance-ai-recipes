@@ -1,0 +1,16 @@
+COMPANY REGISTER EXTRACT (invented sample)
+Extract printed: 30 July 2026
+
+Company name: SALTMARSH ANALYTICS LTD
+Company number: 15873320
+Incorporated: 4 March 2026
+Registered office: 21 Harbour Street, Leith, Edinburgh EH6 6QR
+Nature of business: data processing, hosting and related activities
+
+Officers
+- Director: LINDQVIST, Mara Elin. Appointed 4 March 2026. Country of residence: United Kingdom.
+- Director: REYES, Tomas. Appointed 4 March 2026. Country of residence: United Kingdom.
+- Director: VARGA, Ilse. Appointed 2 June 2026. Country of residence: Germany.
+
+Persons with significant control
+- Lindqvist Holdings Ltd. Ownership of shares: more than 25% but not more than 50%.

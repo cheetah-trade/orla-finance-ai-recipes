@@ -1,0 +1,17 @@
+{
+  "name": "finance-ai-recipes",
+  "owner": {
+    "name": "Digital Flow Pte. Ltd.",
+    "url": "https://orla.finance"
+  },
+  "metadata": {
+    "description": "AI recipes for people who run a company's finances: prompts and skills checked on sample files with answer keys"
+  },
+  "plugins": [
+    {
+      "name": "finance-ai-recipes",
+      "source": "./",
+      "description": "Finance recipes as skills: who owes us, bills due, cash forecast, month close, bank requests and more. Each works on a file you attach, in any model, and on live books when the Orla plugin is connected. No skill here moves money."
+    }
+  ]
+}

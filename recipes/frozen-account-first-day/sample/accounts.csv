@@ -1,0 +1,4 @@
+account,bank,customer_number_ending,currency,balance,balance_at,cards_linked
+Main current ending 2291,Hartwell Bank,7720,GBP,84300.00,2026-11-25 09:00,company debit card ending 5512
+Reserve savings ending 3307,Hartwell Bank,7720,GBP,30000.00,2026-11-25 09:00,
+Lowfield current ending 8840,Lowfield Bank,,GBP,12400.00,2026-11-25 09:00,company debit card ending 0418

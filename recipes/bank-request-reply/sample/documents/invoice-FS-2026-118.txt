@@ -1,0 +1,20 @@
+FERNHILL CREATIVE
+finance@fernhill.example
+
+INVOICE FS-2026-118 (invented document for this sample)
+Invoice date: 28 October 2026
+Due date: 27 November 2026
+
+Bill to:
+Brightwater Media Inc.
+Accounts Payable
+
+Description                                         Amount
+Phase 3: final edit and delivery of the brand
+video series, under the Services Agreement of
+1 August 2026                                       USD 48,000.00
+
+Total due                                           USD 48,000.00
+
+Pay to: account ending 4471, Northgate Business Bank
+Please quote FS-2026-118 as the payment reference.

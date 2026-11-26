@@ -1,0 +1,18 @@
+account,type,currency,activity_aug,activity_sep,activity_oct,closing_sep_30,opening_oct_1,closing_oct_31,statement_oct_31
+Sales revenue,income,USD,18400.00,19100.00,18670.00,,,,
+Payroll,expense,USD,7800.00,7800.00,7800.00,,,,
+Rent,expense,USD,4200.00,4200.00,4200.00,,,,
+Coworking,expense,USD,710.00,705.00,704.00,,,,
+Software,expense,USD,480.00,480.00,960.00,,,,
+Hosting,expense,USD,740.00,740.00,0.00,,,,
+Insurance,expense,USD,300.00,300.00,3600.00,,,,
+Marketing,expense,USD,1200.00,1400.00,1500.00,,,,
+Legal,expense,USD,0.00,800.00,2200.00,,,,
+Shipping,expense,USD,60.00,70.00,64.20,,,,
+Office supplies,expense,USD,120.00,135.00,186.40,,,,
+OP-USD,bank,USD,,,,41300.00,41300.00,36720.00,45470.00
+CARD-USD,bank,USD,,,,-1150.00,-1150.00,-2870.60,-2265.60
+EUR-ACC,bank,EUR,,,,3200.00,3200.00,4390.00,4390.00
+Prepaid expenses,other balance,USD,,,,2400.00,2100.00,2100.00,
+Accrued liabilities,other balance,USD,,,,0.00,0.00,0.00,
+Suspense,other balance,USD,,,,300.00,300.00,1760.00,

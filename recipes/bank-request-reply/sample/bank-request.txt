@@ -1,0 +1,32 @@
+From: Financial Crime Review <reviews@northgate-bank.example>
+To: Fernhill Studio Ltd <finance@fernhill.example>
+Date: 20 November 2026
+Subject: Request for information, reference RFI-88213, account ending 4471
+
+Dear Fernhill Studio Ltd,
+
+As part of our ongoing monitoring of business accounts, we need more information about some
+recent activity on your account ending 4471. Please reply through secure messaging by
+4 December 2026.
+
+1. Incoming payment on 12 November 2026 of USD 47,965.00 from Brightwater Hldgs LLC.
+   Please explain what this payment is for and your relationship with the payer, and provide
+   supporting documents, for example the contract and the invoice.
+
+2. Outgoing payment on 14 November 2026 of EUR 9,500.00 to Vantor Consulting OU, Estonia.
+   This is the first payment from your account to this beneficiary. Please explain its purpose
+   and provide the invoice.
+
+3. Incoming payment on 3 October 2026 of GBP 20,000.00 from M Sokolov.
+   Please tell us the source of these funds and provide supporting evidence.
+
+Documents must be clear and complete. We cannot accept files that are password protected,
+cropped, edited or screenshots. The company name on each document should match the name on
+the account.
+
+If we do not receive the information, we may need to restrict the account while we complete
+our review.
+
+Kind regards,
+Financial Crime Review
+Northgate Business Bank (invented bank for this sample)
