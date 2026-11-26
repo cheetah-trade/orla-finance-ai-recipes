@@ -142,7 +142,7 @@ The figures a correct run must reach on the sample are in
 |---|---|
 | Works without Orla | Yes, on files |
 | Works with Orla | Yes, on live books, one client per run |
-| What it does with your data | Reads. Drafts questions for you to send. Never changes, deletes, closes or sends anything and has no write step |
+| What it does with your data | This recipe reads the client's data and drafts questions for you to send. Never changes, deletes, closes or sends anything and has no write step |
 | Checked on | Claude Sonnet with code execution and Claude Haiku without code execution (files), 25 November 2026 |
 | Not checked on | ChatGPT, Gemini and other models: the prompt is written for any model, but nobody at Orla has run it there yet. Live mode with a real AI client and a person signed in: the connection's tools were only called by a test harness on a seeded test space |
 | Last checked | 25 November 2026 |

@@ -69,9 +69,10 @@ street addresses, tax ids, names of private persons.
 7. Do the first action yourself: for a supplier with new bank details, that means a phone call.
 
 With Orla connected, steps 1 to 4 disappear: the skill reads balances, needs-attention items, bills
-due, last week's transactions and the uncategorised count from your books. Orla cannot see three
-things, and the skill says so: when each bank feed last synced, whether a supplier changed bank
-details, and what a payee usually costs. A normal-spend comparison is the model's own, with both
+due, last week's transactions and the uncategorised count from your books, and for each account when
+its feed last sent the balance and through which day it was checked against the books. Orla cannot
+see two things, and the skill says so: whether a supplier changed bank details, and what a payee
+usually costs. A normal-spend comparison is the model's own, with both
 numbers shown.
 
 ## 6. What comes out
@@ -97,8 +98,9 @@ The figures a correct run must reach on the sample are in
 
 - **A supplier with new bank details:** the model cannot tell if they are genuine. Call the supplier
   on a number from your own records before any payment to them.
-- **Bank feeds:** check that the feeds behind your balances are current. With Orla, the connection does not
-  report the last sync date, so look at the feed status in Orla yourself.
+- **Bank feeds:** check that the feeds behind your balances are current. With Orla, the skill names
+  every account whose feed is more than a day old or whose balance the books do not explain; open
+  those in Orla before you rely on the figure.
 - **Two bills that look the same:** the model names both and does not choose. Open both and decide
   which is real before paying either.
 - **A new payee with a round amount:** the model asks who it is. It does not call it fraud, and

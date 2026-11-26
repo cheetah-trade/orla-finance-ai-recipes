@@ -41,8 +41,13 @@ answered, while "how much moved" still can.
    totals are in base currency. Business spaces on the whole space only: a connection narrowed to some
    accounts is refused with `mcp.report_needs_whole_space`; say so and go on without it.
 4. `orla_list_accounts`: balances per account in each account's own currency. Never add currencies.
-   The answer carries no "last synced" date: say so, and ask the person to look at the feed status in
-   Orla before trusting a balance. Do not call a balance fresh.
+   Each account carries `last_synced_at` (when its bank or provider last sent the balance) and `stale`
+   (true when that is more than a day ago or it was never read; null on an account kept by hand, which
+   no feed updates). Quote the date beside each balance, list every stale account by name, and never
+   call a stale balance current. `reconciliation.through` is the last day the balance was compared with
+   the book and `reconciliation.state` how it came out: name every account in `off` (a gap the book
+   does not explain) and say which accounts have no comparison (`not_enough_levels`, `rail_unwatched`,
+   `not_connected`, `not_in_plan`, `switched_off`).
 5. `orla_list_transactions` with `date_from` and `date_to` set to the last seven days and
    `limit: 200`; page with `offset` until `total` is reached and say so if it stops early. Rows have
    `signed_amount` (negative is money out), `currency`, `amount_base`, `occurred_on`, `payee`, `note`,
@@ -93,6 +98,6 @@ Stop there. That is the end of the recipe.
 ## What to tell the person to check
 
 - Any supplier that asked this week to change bank details, before any payment to them.
-- That the feeds behind the balances are current (Orla does not report the last sync here).
+- The accounts you listed as stale or with a gap against the book, before trusting their balances.
 - The payees you flagged as new or above their usual, and the uncategorised rows.
 - Anything waiting in Orla under "Waiting for you".
