@@ -1,0 +1,5 @@
+rule,switched_on,priority,over_usd,up_to_usd,signatures,who_signs,applies_to,accounts,address_book_only
+Everyday,yes,1,1000.00,5000.00,1,anyone who may approve,everyone,all,no
+Large,yes,2,10000.00,,2,Maya Ellison; Tom Reyes,everyone,all,no
+Large legacy,no,3,8000.00,,1,anyone who may approve,everyone,all,no
+Dev monthly limit,yes,0,3000.00,,1,Lena Hart,Dev Patel (his month so far plus this payment),all,no

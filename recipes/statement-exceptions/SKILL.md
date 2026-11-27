@@ -47,28 +47,35 @@ rows. In step 3 the CSV statement goes to you, the model, as a file: give the pe
    page balances, so the checks of the statement on its own (pages present, each page adding up) come
    from what the person reads off the paper. Say so in the answer.
 3. Which side Orla reads depends on the file:
-   - **A CSV statement: read it yourself, do not hand it in for reading.** Orla refuses to read a CSV
-     (`statement.type_not_readable`: a CSV is imported, not read), and a `dry_run: true` call for a
-     CSV still answers "would start", so the dry run proves nothing here. A CSV whose name has no
-     "statement" in it may instead be filed as a spreadsheet and come back `not_a_statement`. Read
-     the book side with step 5, treat those rows as the books export, and compare them with the
-     statement file by the rules of `prompt.md`. Say in the answer that the statement side was read
-     by you from the file, not by Orla, and skip steps 4, 6 and 7.
+   - **A CSV statement: read it yourself.** Orla reads a CSV only as the bank exported it, header row
+     first, and checks no balances on it; the CSV this recipe asks for carries the printed figures as
+     its first lines, which Orla refuses whole (`statement.csv_unreadable`). Read the book side with
+     step 5, treat those rows as the books export, and compare them with the statement file by the
+     rules of `prompt.md`. Say in the answer that the statement side was read by you from the file,
+     not by Orla, and skip steps 4, 6 and 7. Only if the person asks for Orla's own comparison and the
+     file is the bank's export as it came, hand it in with step 4 (`content_text` with the CSV's text,
+     a `filename` ending in .csv): Orla reads it at once, without the AI and from none of the AI
+     allowance. A refusal or `not_a_statement` (a name with "invoice" or "receipt" in it is filed as
+     that) means you read it yourself as above.
    - **A PDF statement:** hand it in with step 4; Orla reads it.
    - **A photo:** hand it in like a PDF. If the answer is a refusal or `not_a_statement`, read it
      yourself as for a CSV and say so.
-4. **Hand the PDF in. This is a write and needs the person's yes**:
+4. **Hand the PDF in. This is a write and needs the person's yes**. First look at
+   `statement_reading` of this space in `orla_whoami`: `pdf_or_image` false means Orla will not read a
+   PDF here, and `pdf_or_image_why_not` says why (`permissions.denied`: the client has not given you
+   the right to use the AI in their space, as on an Accountant seat; say so and use the files mode,
+   the client can give that right in Orla). `csv` says the same of a CSV.
    `orla_upload_document` files the statement in the client's Documents (it stays there, marked as
    handed in by this connection) and Orla's reading of it is paid once from the client's AI allowance.
    It imports no lines and changes nothing in the books. You may first call with `dry_run: true`: it
-   runs the same checks, including the right to read, and stores nothing. If the call is refused with
-   `permissions.denied`, the client has not given you statement reading: say so and use the files
-   mode (the client can give that right in Orla). Do not try to judge that right from `perms` in
-   `orla_whoami`: it is not listed there. Ask for the yes in one sentence that names all three facts,
+   runs the same checks, including the right to read, stores nothing, and its `statement_reading` says
+   what the reading would do (`would_start` for a PDF, which Orla reads once it files the file as a
+   statement). If the call is refused with `permissions.denied`, the client has not given you
+   statement reading: say so and use the files mode. Ask for the yes in one sentence that names all three facts,
    for example: "File this PDF in <client>'s Documents, where the client's team will see it and this
    skill cannot remove it, and spend one statement reading from the client's AI allowance?" Then, on
    the yes, call `orla_upload_document` with `space_id`, `filename`, `content_type`,
-   `content_base64` (up to 180 KB), `read_statement: true`, a new `idempotency_key` and a
+   `content_base64` (up to 1 MB), `read_statement: true`, a new `idempotency_key` and a
    `rationale` ("statement handed in to reconcile, not to import"). A larger file: leave
    `content_base64` out, and the answer gives a one-time `upload_url` (five minutes) for an HTTP
    PUT; if you cannot send one, use files mode. Use only a `document_id` this connection handed in:
@@ -119,9 +126,9 @@ statement is filed in the client's Documents." (the second sentence only if step
 
 - The figures printed on the statement (closing balance, page count, page balances): the person reads
   them off the paper.
-- A reading of a CSV: Orla reads a PDF statement and refuses to read a CSV, so a CSV statement is
-  read by you from the file. Reading a photo was not tested: a refusal or `not_a_statement` means you
-  read it yourself.
+- The balances of a CSV: Orla reads a CSV's rows as the bank exported them, not the figures typed
+  above them, so in this recipe a CSV statement is read by you from the file. Reading a photo was not
+  tested: a refusal or `not_a_statement` means you read it yourself.
 - The book's opening balance for the period: ask the person for it and say where it came from.
 - A class for each exception: the connection lists the unmatched rows; the classes and the suggestions are
   this recipe's work.

@@ -27,7 +27,10 @@ which one.
    check it in file mode.
 2. `orla_read_contact` for each one: legal name, country, registration number, VAT or tax number,
    roles. Compare them with what the person's invoice or contract says, by the name rules in
-   `prompt.md` (legal form set aside, diacritics and transliteration shown, never decided).
+   `prompt.md` (legal form set aside, diacritics and transliteration shown, never decided). The
+   connection does not give the full account number, the history of bank-detail changes or the
+   website, and emails may come back masked: the bank-details and email-domain checks rest on what
+   the person brings in step 5.
 3. `orla_counterparty_check` for each contact. Read its answer as it is:
    - `checked: false`: Orla has no screening on file for this contact. Say so, and never call the
      contact clear. The person can run a check from the contact's page in Orla (`open_in_orla`); you
@@ -41,9 +44,12 @@ which one.
      incomplete.
    - `registry`: whether a company register answered (found, not found, not consulted). "Not
      consulted" means not checked, not "fine".
+   - `sanctions_match` (only with verdict "sanctioned"): "unreviewed" means a possible sanctions-list
+     match nobody has reviewed yet, not a finding: say the match is waiting for a person's review on
+     the contact's page and do not pay until it is reviewed. "confirmed" means a person confirmed it
+     and Orla stops payments to this contact: stop.
    Quote `verdict_words` as Orla's words, not yours, with `checked_at`: it is the result of Orla's
-   screening on that date, not permission to pay. For an open match Orla's word may be
-   "sanctioned" before anyone has reviewed it: say that the match is waiting for review.
+   screening on that date, not permission to pay.
 4. `orla_get_payment_queue` (and `who` set to the counterparty if the person names one): what is
    waiting to be paid to these counterparties, amounts per currency, never added across currencies.
 5. Ask the person for what Orla does not hold: an email that changes bank details, what they found

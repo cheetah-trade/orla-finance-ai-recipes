@@ -36,8 +36,9 @@ not rebuild it from rows.
    in this month, each with `last_month_amount`, `currency` and `last_bill_on`: a question for the
    person, not a finding, and the amount is only an "estimate from last month's bill" for a draft
    accrual. It is absent when the person does not see bills. Each
-   blocking line may name who clears it (`owners`); on a test space on 2026-11-25 `owners` was empty,
-   so when it is, say "who clears it: not named by Orla" and ask the person. Report these as they are:
+   blocking line may name who clears it: `owners` (people) or `owner_staff` (an AI role such as the
+   AI Bookkeeper). Both are empty when the space has one member, so when both are, say "who clears
+   it: not named by Orla" and ask the person. Report these as they are:
    pass, fail (blocking), flag (advisory).
 2. `orla_list_transactions` with `date_from` and `date_to` for the month and `uncategorized: true`,
    `limit: 1`. Read `total`: that is the number of rows still without a category. Say it first,
@@ -48,8 +49,7 @@ not rebuild it from rows.
    `note`; `statement` is empty unless a statement document is named, and then the check is "could not
    check", not a pass. A difference it cannot explain is a fail, not a rounding.
 4. `orla_list_bills` with `status: "open"`, paged with `limit` and `offset` until the list ends, and
-   pick overdue bills yourself from `due_on` and `status` (on 2026-11-25 the `due` filter also
-   returned paid and void bills, so do not rely on it); one more pass with `status: "paid"` and `q` set to a vendor name when
+   pick overdue bills yourself from `due_on` and `status`; one more pass with `status: "paid"` and `q` set to a vendor name when
    you need that vendor's earlier bills. Each row has `issued_on`, `due_on`, `created_at` (when it
    entered Orla), `amount`, `currency`, `left_to_pay` and `repeats`, plus `booking` and
    `service_period`. `booking.month` is the month the books posted the bill in (`booked_on`;
@@ -62,7 +62,9 @@ not rebuild it from rows.
    period the bill covers. If the lines do not say, the cutoff and deferral checks for it are COULD NOT
    CHECK: ask the person for the service period, do not guess it.
 5. `orla_missing_receipts` for the month, largest first: expenses without a paper. `by_month` gives
-   Orla's own count.
+   Orla's own count. If the person says the missing paper sits in their mail, `orla_get_forwarding_address`
+   gives the space's own address to forward it to; forwarding is their step (or the ready scenario "Go
+   through my mail for a month", one yes for the list), not part of this recipe.
 6. `orla_list_payments`: payments waiting for a signature. They are approved by a person in Orla.
 7. `orla_month_summary` for the month: spending by category and the budgets. Use its totals; do not
    add up pages of transactions. A list stops at 200 rows: never total a month from rows.

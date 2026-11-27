@@ -57,11 +57,15 @@ Each card's "Labels" block says which models a recipe was checked on, and which 
 | Recipe | Shelf | Time |
 |---|---|---|
 | [Check your documents for a new business account or a bank's periodic review](recipes/account-opening-pack/recipe.md) | Business, compliance | 20 minutes, plus the time to collect new documents |
+| [Who approves what and who can do what with money](recipes/approval-matrix/recipe.md) | Business, back-office | 15 minutes, most of it copying the team and the rules |
 | [Find the document behind every unusual payment, before your bank asks](recipes/bank-eyes-check/recipe.md) | Business, compliance | 15 minutes, plus the time to collect missing documents |
 | [Answer a bank's request for information about your account](recipes/bank-request-reply/recipe.md) | Business, compliance | 20 minutes, plus the time to collect missing documents |
+| [Check a supplier's bill against the contract before you pay](recipes/bill-vs-contract/recipe.md) | Business, back-office | 10 minutes |
 | [Bills due this week and what can wait](recipes/bills-due/recipe.md) | Business | 10 minutes |
 | [How long our cash lasts and where it runs low](recipes/cash-forecast/recipe.md) | Business | 15 minutes |
+| [Read a contract for payment terms, automatic renewal and the last day to cancel](recipes/contract-review/recipe.md) | Business, back-office | 10 minutes for up to five contracts |
 | [Check a new client or supplier before the first payment](recipes/counterparty-precheck/recipe.md) | Business, compliance | 15 minutes for the lookups, 5 minutes for the run |
+| [Turn a deal into commercial terms and a contract from your template](recipes/deal-terms-contract/recipe.md) | Business, back-office | 15 minutes |
 | [Who owes us and who to remind](recipes/debtors/recipe.md) | Business | 10 minutes |
 | [Draft an AI policy for your firm in two pages](recipes/firm-ai-policy/recipe.md) | Accountant | 15 minutes, plus the time your people need to answer the questionnaire (about 30 minutes if you fill it in together) |
 | [Your business account is frozen: what to do on the first day](recipes/frozen-account-first-day/recipe.md) | Business, compliance | 15 minutes |
@@ -70,6 +74,7 @@ Each card's "Labels" block says which models a recipe was checked on, and which 
 | [What needs my attention on Monday, in ten minutes](recipes/monday-checks/recipe.md) | Business | 10 minutes |
 | [Close the month without missing a step](recipes/month-close/recipe.md) | Business | 20 minutes |
 | [Sort the transactions that have no category](recipes/sort-uncategorized/recipe.md) | Business | 10 minutes |
+| [Draft a company spending policy with limits by role](recipes/spend-policy/recipe.md) | Business, back-office | 15 minutes, plus about 20 minutes to fill in the questionnaire |
 | [Reconcile a client's bank statement to their books and sort the exceptions](recipes/statement-exceptions/recipe.md) | Accountant | 15 minutes |
 | [Load a bank statement and prove it adds up](recipes/statement-import/recipe.md) | Business | 10 minutes |
 | ["Take over a client's month: what is missing and what does not add up"](recipes/take-over-month/recipe.md) | Accountant | 20 minutes |

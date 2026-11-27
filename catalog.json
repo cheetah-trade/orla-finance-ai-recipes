@@ -55,6 +55,52 @@
       }
     },
     {
+      "id": "approval-matrix",
+      "title": "Who approves what and who can do what with money",
+      "shelf": "business",
+      "section": "back-office",
+      "time_to_run": "15 minutes, most of it copying the team and the rules",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the team list, the approval rules and your wishes that you attach, writes nothing",
+        "live": "none for the rules, because the Orla connection does not read a space's team, roles or approval rules; the skill runs on what you copy from Team & access and can show the payments waiting for a signature"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-26",
+          "Claude Haiku, without code execution, 2026-11-26"
+        ],
+        "live": []
+      },
+      "last_checked": "2026-11-26",
+      "next_check": "2027-02-26",
+      "video": "none yet",
+      "related": [
+        "spend-policy",
+        "deal-terms-contract",
+        "bill-vs-contract"
+      ],
+      "skill": "orla-recipe-approval-matrix",
+      "files": {
+        "card": "recipes/approval-matrix/recipe.md",
+        "prompt": "recipes/approval-matrix/prompt.md",
+        "skill": "recipes/approval-matrix/SKILL.md",
+        "sample": [
+          "recipes/approval-matrix/sample/approval-rules.csv",
+          "recipes/approval-matrix/sample/how-we-want-it.md",
+          "recipes/approval-matrix/sample/team.csv"
+        ],
+        "answer_key": "recipes/approval-matrix/sample/answer-key.md",
+        "runs": [
+          "recipes/approval-matrix/runs/2026-11-26-file-claude-haiku-nocode.md",
+          "recipes/approval-matrix/runs/2026-11-26-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
       "id": "bank-eyes-check",
       "title": "Find the document behind every unusual payment, before your bank asks",
       "shelf": "business",
@@ -162,6 +208,54 @@
       }
     },
     {
+      "id": "bill-vs-contract",
+      "title": "Check a supplier's bill against the contract before you pay",
+      "shelf": "business",
+      "section": "back-office",
+      "time_to_run": "10 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the bills, the contract terms and any email you attach, writes nothing",
+        "live": "reads the supplier bills in Orla with Orla's warnings about new bank details and look-alike bills, and the bills due; you attach the contract terms; pays nothing, changes no bank details"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-26",
+          "Claude Haiku, without code execution, 2026-11-26"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-26"
+        ]
+      },
+      "last_checked": "2026-11-26",
+      "next_check": "2027-02-26",
+      "video": "none yet",
+      "related": [
+        "counterparty-precheck",
+        "bills-due",
+        "contract-review"
+      ],
+      "skill": "orla-recipe-bill-vs-contract",
+      "files": {
+        "card": "recipes/bill-vs-contract/recipe.md",
+        "prompt": "recipes/bill-vs-contract/prompt.md",
+        "skill": "recipes/bill-vs-contract/SKILL.md",
+        "sample": [
+          "recipes/bill-vs-contract/sample/bills.csv",
+          "recipes/bill-vs-contract/sample/email-new-bank-details.txt",
+          "recipes/bill-vs-contract/sample/supplier-contracts.md"
+        ],
+        "answer_key": "recipes/bill-vs-contract/sample/answer-key.md",
+        "runs": [
+          "recipes/bill-vs-contract/runs/2026-11-26-file-claude-haiku-nocode.md",
+          "recipes/bill-vs-contract/runs/2026-11-26-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
       "id": "bills-due",
       "title": "Bills due this week and what can wait",
       "shelf": "business",
@@ -253,6 +347,57 @@
       }
     },
     {
+      "id": "contract-review",
+      "title": "Read a contract for payment terms, automatic renewal and the last day to cancel",
+      "shelf": "business",
+      "section": "back-office",
+      "time_to_run": "10 minutes for up to five contracts",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads the contracts, amendments and register you attach, writes nothing",
+        "live": "reads your client contracts in Orla to compare what Orla holds with the paper; the wording comes from the files you attach; sends no notice, changes no contract"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-26",
+          "Claude Haiku, without code execution, 2026-11-26"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-26"
+        ]
+      },
+      "last_checked": "2026-11-26",
+      "next_check": "2027-02-26",
+      "video": "none yet",
+      "related": [
+        "bill-vs-contract",
+        "deal-terms-contract",
+        "bills-due"
+      ],
+      "skill": "orla-recipe-contract-review",
+      "files": {
+        "card": "recipes/contract-review/recipe.md",
+        "prompt": "recipes/contract-review/prompt.md",
+        "skill": "recipes/contract-review/SKILL.md",
+        "sample": [
+          "recipes/contract-review/sample/contracts/K1-nimbus-desk-subscription.md",
+          "recipes/contract-review/sample/contracts/K1a-nimbus-desk-amendment.md",
+          "recipes/contract-review/sample/contracts/K2-brightway-cleaning.md",
+          "recipes/contract-review/sample/contracts/K3-brook-and-vale-consulting.md",
+          "recipes/contract-review/sample/contracts/K4-tallow-data-licence.md",
+          "recipes/contract-review/sample/contracts-register.csv"
+        ],
+        "answer_key": "recipes/contract-review/sample/answer-key.md",
+        "runs": [
+          "recipes/contract-review/runs/2026-11-26-file-claude-haiku-nocode.md",
+          "recipes/contract-review/runs/2026-11-26-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
       "id": "counterparty-precheck",
       "title": "Check a new client or supplier before the first payment",
       "shelf": "business",
@@ -297,6 +442,55 @@
         "runs": [
           "recipes/counterparty-precheck/runs/2026-11-25-file-claude-haiku-nocode.md",
           "recipes/counterparty-precheck/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "deal-terms-contract",
+      "title": "Turn a deal into commercial terms and a contract from your template",
+      "shelf": "business",
+      "section": "back-office",
+      "time_to_run": "15 minutes",
+      "modes": {
+        "file": "prompt.md",
+        "live": "SKILL.md"
+      },
+      "data_access": {
+        "file": "reads your notes, emails, price list, standard terms and template, writes a draft for you, sends nothing",
+        "live": "reads the client's contact and any existing contract with that client in Orla to compare them with the deal; creates no contract, sends nothing"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-26",
+          "Claude Haiku, without code execution, 2026-11-26"
+        ],
+        "live": [
+          "Orla personal MCP connection, tools called by a test harness on a seeded test space, no AI model, 2026-11-26"
+        ]
+      },
+      "last_checked": "2026-11-26",
+      "next_check": "2027-02-26",
+      "video": "none yet",
+      "related": [
+        "contract-review",
+        "approval-matrix",
+        "spend-policy"
+      ],
+      "skill": "orla-recipe-deal-terms-contract",
+      "files": {
+        "card": "recipes/deal-terms-contract/recipe.md",
+        "prompt": "recipes/deal-terms-contract/prompt.md",
+        "skill": "recipes/deal-terms-contract/SKILL.md",
+        "sample": [
+          "recipes/deal-terms-contract/sample/contract-template.md",
+          "recipes/deal-terms-contract/sample/deal-notes.md",
+          "recipes/deal-terms-contract/sample/our-standard-terms.md",
+          "recipes/deal-terms-contract/sample/price-list.csv"
+        ],
+        "answer_key": "recipes/deal-terms-contract/sample/answer-key.md",
+        "runs": [
+          "recipes/deal-terms-contract/runs/2026-11-26-file-claude-haiku-nocode.md",
+          "recipes/deal-terms-contract/runs/2026-11-26-file-claude-sonnet-code.md"
         ]
       }
     },
@@ -672,6 +866,51 @@
         "runs": [
           "recipes/sort-uncategorized/runs/2026-11-25-file-claude-haiku-nocode.md",
           "recipes/sort-uncategorized/runs/2026-11-25-file-claude-sonnet-code.md"
+        ]
+      }
+    },
+    {
+      "id": "spend-policy",
+      "title": "Draft a company spending policy with limits by role",
+      "shelf": "business",
+      "section": "back-office",
+      "time_to_run": "15 minutes, plus about 20 minutes to fill in the questionnaire",
+      "modes": {
+        "file": "prompt.md",
+        "live": "none"
+      },
+      "data_access": {
+        "file": "reads the questionnaire and the spending export you attach, writes a draft for the owner, sends nothing",
+        "live": "none, because the policy is drafted from the owner's own answers, and the Orla connection does not read cards, limits or the team"
+      },
+      "checked_on": {
+        "file": [
+          "Claude Sonnet, with code execution, 2026-11-26",
+          "Claude Haiku, without code execution, 2026-11-26"
+        ],
+        "live": []
+      },
+      "last_checked": "2026-11-26",
+      "next_check": "2027-02-26",
+      "video": "none yet",
+      "related": [
+        "approval-matrix",
+        "month-close",
+        "missing-docs-letter"
+      ],
+      "skill": "orla-recipe-spend-policy",
+      "files": {
+        "card": "recipes/spend-policy/recipe.md",
+        "prompt": "recipes/spend-policy/prompt.md",
+        "skill": "recipes/spend-policy/SKILL.md",
+        "sample": [
+          "recipes/spend-policy/sample/company-questionnaire.md",
+          "recipes/spend-policy/sample/spend-last-period.csv"
+        ],
+        "answer_key": "recipes/spend-policy/sample/answer-key.md",
+        "runs": [
+          "recipes/spend-policy/runs/2026-11-26-file-claude-haiku-nocode.md",
+          "recipes/spend-policy/runs/2026-11-26-file-claude-sonnet-code.md"
         ]
       }
     },

@@ -33,7 +33,7 @@ stop. If `masked` is true, payees come back masked; say that "who was paid" cann
    Orla's reader can see one; ask the person for it only if `balance_proof.printed_closing` comes back empty.
 3. **Hand the file in. This needs the person's yes**, because it files a document and uses the space's
    AI allowance once. It books nothing and pays nothing. Call `orla_upload_document` with the
-   filename, content type, `content_base64` (up to 180 KB) and `read_statement: true`, and a new
+   filename, content type, `content_base64` (up to 1 MB) and `read_statement: true`, and a new
    `idempotency_key`. If the file is too large, leave out `content_base64` and send it to the
    `upload_url` in the answer if you can make an HTTP request; otherwise tell the person to import
    it in Orla. If reading is off for the space (`statement.reading_off`) or the person's AI consent or
