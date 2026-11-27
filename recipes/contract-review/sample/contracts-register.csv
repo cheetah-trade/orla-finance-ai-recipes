@@ -1,0 +1,5 @@
+ref,contract,counterparty,we_are,end_date_recorded,renews_recorded,notice_recorded,payment_term_recorded
+K1,Nimbus Desk subscription,Nimbus Desk Ltd,customer,2026-12-14,no,,30 days
+K2,Office cleaning,Brightway Facilities Ltd,customer,2026-12-31,no,30 days,30 days
+K3,Consulting services,Brook & Vale Ltd,supplier,2027-05-31,no,30 days,30 days
+K4,Data feed licence,Tallow Market Data Ltd,customer,2027-03-31,yes,30 days,30 days

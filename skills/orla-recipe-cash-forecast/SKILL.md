@@ -68,9 +68,9 @@ name no plan and no price, and give the fallback.
    to explain why `as_usual` differs from `on_time`.
 6. `orla_get_expected_inflows` (no arguments beyond the space) and `orla_get_upcoming_obligations` with
    `days: 91`: the money expected in and the dated obligations going out, when the person asks "what is behind week N".
-   On a test space on 2026-11-25 `orla_get_upcoming_obligations` answered `matched 0` although open
-   bills and plans were counted by the forecast: if it comes back empty, take the outgoing items from
-   `orla_list_bills` with `status: "open"` instead and say so.
+   `orla_get_upcoming_obligations` reads loan installments and IOUs only, so `matched 0` is normal
+   for a space without them: the supplier bills and scheduled payments going out come from
+   `orla_list_bills` with `status: "open"` and from `orla_cash_forecast`.
 7. Build the answer in the order of `prompt.md`: control (what you read, base currency, as-of date), the
    weekly table with the two series, the range of the run-out dates, the low week, net burn and runway
    (from `runway_months` and `average_monthly_burn`, naming them net or saying you cannot tell),

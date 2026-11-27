@@ -84,8 +84,8 @@ named.
    entity type. Do not open contacts one by one. Every item of this list already carries a `tax_id`
    field (so does `orla_read_contact`), which for a US business may be its EIN, and the connection's
    masking does not hide it. Never copy, quote, compare or mention it, not even as "on file"; the W-9
-   column comes only from the client's vendor list. Do not rely on a contact's `last_paid_usd` or
-   `last_paid_on`: money that came back from a payee shows there as the last payment. Totals come
+   column comes only from the client's vendor list. Do not rely on a contact's `last_payment`: it is
+   the newest payment either way (`direction` in is money from the payee), not the year's total. Totals come
    only from the rows of step 3. Two payee spellings on one `contact_id`: show
    them side by side and say Orla links both to one contact; do not merge their totals.
 6. `orla_list_bills` (`space_id`, `status: "paid"`, `q` with the supplier's words) when a question

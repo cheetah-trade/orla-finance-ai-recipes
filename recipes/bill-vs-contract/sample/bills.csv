@@ -1,0 +1,14 @@
+bill_ref,supplier,bill_number,bill_date,due_date_on_bill,currency,line,description,qty,unit_price,line_net,vat_rate,vat_on_bill,total_on_bill,iban_on_bill
+B1,Larchmont Print Ltd,INV-2291,2026-11-03,2026-12-03,GBP,1,A4 brochure full colour,5000,0.42,2100.00,20%,498.00,2988.00,GB33BUKB20201555555555
+B1,Larchmont Print Ltd,INV-2291,2026-11-03,2026-12-03,GBP,2,Design work (hours),6,65.00,390.00,20%,498.00,2988.00,GB33BUKB20201555555555
+B2,Larchmont Print Ltd,INV-2310,2026-11-17,2026-12-17,GBP,1,A4 brochure full colour,3000,0.45,1350.00,20%,322.00,1932.00,GB33BUKB20201555555555
+B2,Larchmont Print Ltd,INV-2310,2026-11-17,2026-12-17,GBP,2,Design work (hours),4,65.00,260.00,20%,322.00,1932.00,GB33BUKB20201555555555
+B3,Quayside IT Services Ltd,Q-1043,2026-11-01,2026-12-01,GBP,1,Support retainer November 2026,1,1200.00,1200.00,20%,325.00,1950.00,GB82WEST12345698765432
+B3,Quayside IT Services Ltd,Q-1043,2026-11-01,2026-12-01,GBP,2,Extra support hours October,5,85.00,425.00,20%,325.00,1950.00,GB82WEST12345698765432
+B4,Quayside IT Services Ltd,QIT-1043,2026-11-20,2026-12-20,GBP,1,Support retainer November 2026,1,1200.00,1200.00,20%,325.00,1950.00,LT121000011101001000
+B4,Quayside IT Services Ltd,QIT-1043,2026-11-20,2026-12-20,GBP,2,Extra support hours October,5,85.00,425.00,20%,325.00,1950.00,LT121000011101001000
+B5,Quayside IT Services Ltd,Q-1057,2026-11-24,2026-12-01,GBP,1,Extra support hours November,12,92.00,1104.00,20%,270.80,1624.80,GB82WEST12345698765432
+B5,Quayside IT Services Ltd,Q-1057,2026-11-24,2026-12-01,GBP,2,Onboarding fee new laptops,1,250.00,250.00,20%,270.80,1624.80,GB82WEST12345698765432
+B6,Ostara Logistics GmbH,OL-77812,2026-10-31,2026-12-15,EUR,1,Parcels up to 5 kg,120,6.80,816.00,0% reverse charge,0.00,1060.00,DE89370400440532013000
+B6,Ostara Logistics GmbH,OL-77812,2026-10-31,2026-12-15,EUR,2,Pallets,3,48.00,144.00,0% reverse charge,0.00,1060.00,DE89370400440532013000
+B7,Ostara Logistics GmbH,OL-77901,2026-11-15,2026-12-30,GBP,1,Parcels up to 5 kg,80,5.90,472.00,0% reverse charge,0.00,472.00,DE89370400440532013000

@@ -1,0 +1,32 @@
+date,person,role,merchant,category,amount_gbp,receipt,note
+2026-08-04,Maya Ellison,CEO,Skyline Air,Flights,1240.00,yes,Economy return Lisbon client visit
+2026-08-06,Tom Reyes,Head of Operations,Oakline Office,Furniture,3400.00,yes,Desks; Maya approved by email 5 Aug
+2026-08-08,Omar Haddad,Team lead,Devtools Hub,Software,1100.00,yes,Annual licence
+2026-08-12,Sara Lind,Team lead,Printhouse,Printing,640.00,yes,
+2026-08-14,Kit Morgan,Team lead,Riverside Bistro,Client meal,180.00,yes,3 people
+2026-08-19,Maya Ellison,CEO,Harbour Hotel,Hotel,420.00,yes,3 nights London
+2026-08-20,Priti Shah,Staff,Northline Rail,Travel,86.40,yes,
+2026-08-25,Omar Haddad,Team lead,Skyline Air,Flights,980.00,no,
+2026-08-28,Tom Reyes,Head of Operations,Cloudnest,Hosting,1850.00,yes,
+2026-09-03,Sara Lind,Team lead,Riverside Bistro,Client meal,310.00,yes,4 people
+2026-09-05,Leo Grant,Staff,City Cabs,Taxi,18.50,no,
+2026-09-09,Kit Morgan,Team lead,Giftbox Co,Client gifts,135.00,yes,3 gifts
+2026-09-10,Maya Ellison,CEO,Pixelworks Software,Software,59.00,yes,New monthly subscription
+2026-09-15,Tom Reyes,Head of Operations,Cloudnest,Hosting,1850.00,yes,
+2026-09-18,Priti Shah,Staff,Page and Quill,Books,32.00,no,
+2026-09-22,Sara Lind,Team lead,Lumen Cameras,Equipment,1450.00,yes,Camera body
+2026-09-22,Sara Lind,Team lead,Lumen Cameras,Equipment,1450.00,yes,Lenses
+2026-09-26,Kit Morgan,Team lead,Skyline Air,Flights,1320.00,yes,
+2026-09-30,Omar Haddad,Team lead,Devtools Hub,Software,1100.00,yes,Second annual licence
+2026-10-02,Maya Ellison,CEO,FinOps Summit,Conference,2950.00,yes,
+2026-10-07,Omar Haddad,Team lead,Hotel am Fluss,Hotel,412.30,yes,2 nights Berlin; card charged in GBP
+2026-10-12,Kit Morgan,Team lead,Harbour Hotel,Hotel,510.00,yes,3 nights London
+2026-10-12,Kit Morgan,Team lead,Skyline Air,Flights,-220.00,yes,Refund for a cancelled flight
+2026-10-15,Tom Reyes,Head of Operations,Cloudnest,Hosting,1920.00,yes,
+2026-10-19,Omar Haddad,Team lead,Cash machine,Cash,200.00,no,Cash withdrawal
+2026-10-21,Tom Reyes,Head of Operations,Oakline Office,Furniture,2600.00,yes,
+2026-10-28,Leo Grant,Staff,Brightscreen,Equipment,289.00,yes,Monitor
+2026-10-30,Joe Marsh,Staff,City Cabs,Taxi,24.00,yes,
+2026-11-03,Joe Marsh,Staff,Skyline Air,Flights,310.00,yes,Claim for a flight on 2 Nov
+2026-11-05,Maya Ellison,CEO,Pixelworks Software,Software,59.00,yes,
+2026-11-14,Tom Reyes,Head of Operations,Cloudnest,Hosting,1920.00,yes,

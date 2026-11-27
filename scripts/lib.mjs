@@ -68,7 +68,7 @@ export function walk(root, dir = root) {
 }
 
 export const SHELVES = new Set(["business", "accountant"]);
-export const SECTIONS = new Set(["compliance"]);
+export const SECTIONS = new Set(["compliance", "back-office"]);
 export const TEXT_EXT = new Set([".md", ".csv", ".txt"]);
 const DATE = /\b(\d{4}-\d{2}-\d{2})\b/;
 

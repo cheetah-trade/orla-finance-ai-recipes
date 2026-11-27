@@ -36,8 +36,7 @@ be answerable, while amounts and dates still are.
    the per-currency sums yourself from `bills[]`, with code if you can run it. The report has no
    paging. Pass `supplier` to narrow it to one supplier.
 2. `orla_list_bills` with `status: "open"` when you need more than the report gives, and sort the
-   rows into overdue, this week and later yourself from `due_on` (on 2026-11-25 the `due` filter
-   ignored `week` and returned paid and void bills for `overdue`, so do not rely on it): rows have `number`, `issuer_name`, `amount`, `paid_amount`, `left_to_pay`, `due_on`,
+   rows into overdue, this week and later yourself from `due_on`: rows have `number`, `issuer_name`, `amount`, `paid_amount`, `left_to_pay`, `due_on`,
    `due_stated`, `status`, `credit_offered`, `credited_amount`, `recurring_payment_id`. Page with
    `limit` (1 to 200) and `offset` until the list ends and say so if it was cut short. `due_stated`
    tells whether the due date was written on the bill or worked out: say which when it matters.

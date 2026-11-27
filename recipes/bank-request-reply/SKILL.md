@@ -29,13 +29,18 @@ which one.
    set to the date the bank names and `search` set to the counterparty. If no row or several rows
    come back, show what came back and ask the person; never pick one by guess. Compare the amount and
    currency with the bank's letter.
-3. `orla_list_attachments` with that transaction's id: which documents are attached in Orla.
+3. `orla_list_attachments` with that transaction's id: which documents are attached in Orla. It
+   gives each file's name and size, never its text: open the file in Orla before relying on it.
 4. Money in: `orla_list_invoices` with `q` set to the reference or the client name, to find the
-   invoice behind the payment (number, date, amount, client, status). Money out, or a contract named
-   in the reference: `orla_list_contracts` with `q` set to the counterparty, then
-   `orla_get_contract_gaps` for that contract.
-5. `orla_missing_receipts` for the month of each transaction: whether Orla itself counts the row as
-   missing a document.
+   invoice behind the payment (number, date, amount, client, status). Its `owed` counts only payments
+   linked to the invoice in Orla: an invoice still owed in full beside a receipt with its number means
+   nobody linked the two; say so and ask the person to link them in Orla before replying. Money out,
+   or a contract named in the reference: `orla_list_contracts` with `q` set to the counterparty, then
+   `orla_get_contract_gaps` for that contract. The contract's own payment terms are not returned:
+   ask the person for the signed contract when the bank asks why money moved when it did.
+5. `orla_missing_receipts` for the month of each transaction, with `direction` "in" for money
+   received and "out" (the default) for money paid: whether Orla counts the row as having nothing
+   on file. Money in is listed when no file is attached and no invoice payment is linked to it.
 6. Build each question's chain (contract, delivery or approval, invoice, payment) and run the checks
    in `prompt.md`: amounts, date order, payer against contract party, our company name on our own
    documents, and every invoice offered as proof matched by a receipt. Where Orla has no document for

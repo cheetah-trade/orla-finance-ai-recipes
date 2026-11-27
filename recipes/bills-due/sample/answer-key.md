@@ -43,7 +43,7 @@ EUR: RL-8841 1,800.00 fits in 3,000.00 (leaves 1,200.00 above the minimum): pay 
    the new details are genuine or fake. If cleared, it needs 1,150.00 and only 50.00 above the minimum
    is left: a question for the person, not a re-ordering by the run.
 3. **Probable duplicate.** HP-2291 and "HP 2291", 640.00 USD, due 27 Nov. Counted once in the plan, the
-   person asked which is real. Counting both gives 25,065.00; the correct plan figure is 24,275.00.
+   person asked which is real. Counting both gives 24,915.00; the correct plan figure is 24,275.00.
 4. **Payroll and tax first.** PR-1148 and TX-Q4-26 are paid before everything else, and the tax bill's
    stated penalty (315.00 USD after the due date) may be quoted as written.
 5. **Critical before the rest.** Rent is marked critical; it takes the third place.
